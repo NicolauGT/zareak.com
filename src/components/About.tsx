@@ -5,7 +5,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            ¿Qué es la Terapia Gestalt en Pamplona?
+            ¿Qué es la Terapia Gestalt?
           </h2>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
         </div>
