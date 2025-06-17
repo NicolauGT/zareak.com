@@ -1,5 +1,5 @@
 
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight, ArrowDown } from "lucide-react";
 
 const Benefits = () => {
   const benefits = [
@@ -29,38 +29,69 @@ const Benefits = () => {
 
         <div className="relative">
           {/* Red de beneficios */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 relative">
             {benefits.map((benefit, index) => (
-              <div key={index} className="relative">
-                <div className="bg-green-50 p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-all duration-300 shadow-sm hover:shadow-md">
+              <div key={index} className="relative flex flex-col items-center">
+                {/* Benefit Card */}
+                <div className="bg-green-50 p-4 rounded-lg border-2 border-green-200 hover:border-green-400 transition-all duration-300 shadow-sm hover:shadow-md w-full">
                   <div className="flex items-start space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
                     <p className="text-gray-700 text-sm font-medium">{benefit}</p>
                   </div>
                 </div>
                 
-                {/* Líneas conectoras - solo para algunos elementos para crear efecto de red */}
-                {(index === 2 || index === 5) && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3 transform -translate-y-1/2">
-                    <ArrowRight className="h-4 w-4 text-green-400" />
+                {/* Conexiones verticales para móvil */}
+                {index < benefits.length - 1 && (
+                  <div className="md:hidden flex flex-col items-center mt-4 mb-4">
+                    <ArrowDown className="h-6 w-6 text-green-500" />
                   </div>
                 )}
                 
-                {(index === 0 || index === 3 || index === 6) && (
-                  <div className="hidden md:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2">
-                    <div className="w-0.5 h-4 bg-green-300"></div>
+                {/* Conexiones horizontales para tablet (2 columnas) */}
+                {index % 2 === 0 && index < benefits.length - 1 && (
+                  <div className="hidden md:block lg:hidden absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="h-6 w-6 text-green-500" />
+                  </div>
+                )}
+                
+                {/* Conexiones para escritorio (3 columnas) */}
+                {/* Fila superior: conectar elementos 0->1 y 1->2 */}
+                {(index === 0 || index === 1) && (
+                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="h-6 w-6 text-green-500" />
+                  </div>
+                )}
+                
+                {/* Fila media: conectar elementos 3->4 y 4->5 */}
+                {(index === 3 || index === 4) && (
+                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="h-6 w-6 text-green-500" />
+                  </div>
+                )}
+                
+                {/* Fila inferior: conectar elementos 6->7 */}
+                {index === 6 && (
+                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
+                    <ArrowRight className="h-6 w-6 text-green-500" />
+                  </div>
+                )}
+                
+                {/* Conexiones verticales para escritorio: conectar filas */}
+                {(index === 1 || index === 4) && (
+                  <div className="hidden lg:block absolute top-full left-1/2 transform -translate-x-1/2 mt-2 z-10">
+                    <ArrowDown className="h-8 w-8 text-green-500" />
                   </div>
                 )}
               </div>
             ))}
           </div>
 
-          {/* Líneas conectoras centrales */}
-          <div className="hidden lg:flex justify-center items-center mb-8">
-            <div className="flex space-x-4">
-              <ArrowRight className="h-6 w-6 text-green-500" />
-              <ArrowRight className="h-6 w-6 text-green-500" />
-              <ArrowRight className="h-6 w-6 text-green-500" />
+          {/* Separador visual antes del resultado */}
+          <div className="flex justify-center items-center mb-8">
+            <div className="flex space-x-2">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+              <div className="w-2 h-2 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
             </div>
           </div>
 
