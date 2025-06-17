@@ -10,16 +10,7 @@ const Therapist = () => {
           <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800" 
-              alt="Persona contemplando el horizonte"
-              className="rounded-lg shadow-xl w-full h-96 object-cover"
-            />
-            <div className="absolute inset-0 bg-green-600 opacity-10 rounded-lg"></div>
-          </div>
-          
+        <div className="max-w-3xl mx-auto text-center">
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-gray-800">Nicolau Gómez</h3>
             <div className="text-lg text-green-600 font-medium space-y-1">
@@ -37,7 +28,7 @@ const Therapist = () => {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-4 mt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 max-w-lg mx-auto">
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <h4 className="font-bold text-gray-800">Formación</h4>
                 <p className="text-sm text-gray-600">Terapia Gestalt<br/>Psicología Integral</p>

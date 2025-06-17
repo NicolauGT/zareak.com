@@ -1,4 +1,3 @@
-
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-12 px-6">
@@ -41,8 +40,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Terapia Gestalt. Todos los derechos reservados. | 
-            <span className="text-green-400"> Colegiado Nº 12345</span>
+            © 2024 Terapia Gestalt. Todos los derechos reservados.
           </p>
         </div>
       </div>

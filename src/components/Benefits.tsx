@@ -75,16 +75,6 @@ const Benefits = () => {
             </div>
           </div>
         </div>
-
-        {/* Imagen complementaria */}
-        <div className="mt-16 text-center">
-          <img 
-            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800" 
-            alt="Naturaleza tranquila representando el crecimiento personal"
-            className="rounded-lg shadow-xl w-full max-w-2xl mx-auto h-64 object-cover"
-          />
-          <div className="absolute inset-0 bg-green-600 opacity-10 rounded-lg"></div>
-        </div>
       </div>
     </section>
   );
