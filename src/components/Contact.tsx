@@ -32,23 +32,20 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <User className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">Dra. María González</span>
+                  <span className="text-gray-700">Nicolau Gómez</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MessageSquare className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">info@terapiagestalt.com</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Calendar className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">+34 600 123 456</span>
+                  <span className="text-gray-700">Ngt.terapeuta@gmail.com</span>
                 </div>
               </div>
               
               <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                <h4 className="font-bold text-green-800 mb-2">Primera Consulta Gratuita</h4>
+                <h4 className="font-bold text-green-800 mb-2">Primera Consulta</h4>
                 <p className="text-green-700">
-                  Te ofrezco una primera sesión de 30 minutos sin costo para que puedas 
-                  conocerme y decidir si mi enfoque es el adecuado para ti.
+                  Te ofrezco una primera sesión de 30 minutos que solo tiene un 
+                  coste de 10€ para que puedas conocerme y decidir si mi enfoque 
+                  es el adecuado para ti.
                 </p>
               </div>
 
