@@ -13,12 +13,6 @@ const Therapist = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-gray-800">Nicolau Gómez</h3>
-            <div className="text-lg text-green-600 font-medium space-y-1">
-              <p>Formado en Terapia Gestalt</p>
-              <p>Psicología Integral</p>
-              <p>Sistémica</p>
-              <p>Teatro Terapéutico</p>
-            </div>
             
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
