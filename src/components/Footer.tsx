@@ -31,8 +31,8 @@ const Footer = () => {
               Contacto
             </h4>
             <div className="space-y-2 text-gray-300">
-              <p>info@terapiagestalt.com</p>
-              <p>+34 600 123 456</p>
+              <p>Nicolau Gómez</p>
+              <p>Ngt.terapeuta@gmail.com</p>
               <p>Lunes - Viernes: 9:00 - 20:00</p>
               <p>Sábados: 10:00 - 14:00</p>
             </div>
