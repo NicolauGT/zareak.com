@@ -13,7 +13,7 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-medium-gray leading-relaxed">
-              La terapia Gestalt en Pamplona es un enfoque humanístico que se centra en el <strong>aquí y ahora</strong>, 
+              La terapia Gestalt es un enfoque humanístico que se centra en el <strong>aquí y ahora</strong>, 
               ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
             </p>
             <p className="text-lg text-medium-gray leading-relaxed">
