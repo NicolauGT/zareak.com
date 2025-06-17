@@ -1,6 +1,11 @@
+
 const Therapist = () => {
-  return <section className="py-20 px-6 bg-light-beige">
-      <div className="max-w-6xl mx-auto">
+  return <section className="py-20 px-6 bg-light-beige relative overflow-hidden">
+      {/* Elementos decorativos de fondo */}
+      <div className="absolute top-0 left-1/3 w-44 h-44 bg-gradient-to-br from-golden/25 to-red-accent/20 rounded-full blur-xl"></div>
+      <div className="absolute bottom-10 right-10 w-32 h-32 bg-gradient-to-tl from-red-accent/20 to-light-beige/40 rounded-full blur-lg"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark-gray mb-6">
         </h2>
@@ -10,13 +15,13 @@ const Therapist = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-dark-gray">Nicolau Gómez</h3>
-            <h4 className="text-xl text-golden font-semibold">Terapeuta Individual en Pamplona</h4>
+            <h4 className="text-xl text-golden font-semibold">Terapeuta Individual</h4>
             
             <div className="space-y-4 text-medium-gray leading-relaxed">
               <p>
-                Como terapeuta gestalt en Pamplona, creo firmemente en la capacidad innata de cada persona para crecer 
+                Como terapeuta gestalt, creo firmemente en la capacidad innata de cada persona para crecer 
                 y sanar. Mi rol es acompañarte en este proceso de autodescubrimiento 
-                desde un espacio de respeto, empatía y profesionalidad en el corazón de Pamplona.
+                desde un espacio de respeto, empatía y profesionalidad.
               </p>
             </div>
 

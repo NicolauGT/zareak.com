@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { User, Users, Calendar, Headphones } from "lucide-react";
 
@@ -35,8 +34,13 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-light-beige">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-light-beige relative overflow-hidden">
+      {/* Elementos decorativos de fondo */}
+      <div className="absolute top-0 right-0 w-48 h-48 bg-gradient-to-bl from-golden/15 to-red-accent/15 rounded-full blur-2xl"></div>
+      <div className="absolute bottom-10 left-10 w-36 h-36 bg-gradient-to-tr from-red-accent/20 to-golden/25 rounded-full blur-xl"></div>
+      <div className="absolute top-1/2 left-1/4 w-20 h-20 bg-gradient-to-r from-light-beige/50 to-golden/20 rounded-full blur-lg"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark-gray mb-6">
             Servicios de Terapia Individual

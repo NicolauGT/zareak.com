@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -7,8 +6,13 @@ import { MessageSquare, Calendar, User, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-6 bg-white relative overflow-hidden">
+      {/* Elementos decorativos de fondo */}
+      <div className="absolute top-10 left-0 w-52 h-52 bg-gradient-to-br from-golden/15 to-red-accent/15 rounded-full blur-2xl"></div>
+      <div className="absolute bottom-20 right-0 w-40 h-40 bg-gradient-to-tl from-light-beige/40 to-golden/20 rounded-full blur-xl"></div>
+      <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-l from-red-accent/20 to-golden/15 rounded-full blur-lg"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark-gray mb-6">
             Reserva tu Cita de Terapia Individual

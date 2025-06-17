@@ -1,6 +1,11 @@
+
 const About = () => {
-  return <section className="py-20 px-6 bg-white">
-      <div className="max-w-6xl mx-auto">
+  return <section className="py-20 px-6 bg-white relative overflow-hidden">
+      {/* Elementos decorativos de fondo */}
+      <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-golden/20 to-red-accent/20 rounded-full blur-xl"></div>
+      <div className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-tl from-light-beige/40 to-golden/30 rounded-full blur-lg"></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark-gray mb-6">
             ¿Qué es la Terapia Gestalt?
@@ -15,7 +20,7 @@ const About = () => {
               ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
             </p>
             <p className="text-lg text-medium-gray leading-relaxed">
-              Como terapeuta gestalt en Pamplona, ofrezco un proceso de autoconocimiento profundo 
+              Como terapeuta gestalt, ofrezco un proceso de autoconocimiento profundo 
               donde podrás integrar aspectos fragmentados de tu personalidad y encontrar un mayor 
               equilibrio emocional y bienestar personal.
             </p>
@@ -25,7 +30,7 @@ const About = () => {
           </div>
           
           <div className="relative">
-            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800" alt="Terapia Gestalt Pamplona - Paisaje sereno representando la paz interior" className="rounded-lg shadow-xl w-full h-96 object-cover" />
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800" alt="Terapia Gestalt - Paisaje sereno representando la paz interior" className="rounded-lg shadow-xl w-full h-96 object-cover" />
             <div className="absolute inset-0 bg-golden opacity-10 rounded-lg"></div>
           </div>
         </div>
