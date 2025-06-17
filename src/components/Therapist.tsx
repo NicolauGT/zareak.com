@@ -1,9 +1,9 @@
 
 const Therapist = () => {
   return <section className="py-20 px-6 bg-light-beige relative overflow-hidden">
-      {/* Elementos decorativos de fondo */}
-      <div className="absolute top-0 left-1/3 w-44 h-44 bg-gradient-to-br from-golden/25 to-red-accent/20 rounded-full blur-xl"></div>
-      <div className="absolute bottom-10 right-10 w-32 h-32 bg-gradient-to-tl from-red-accent/20 to-light-beige/40 rounded-full blur-lg"></div>
+      {/* Elementos decorativos de fondo más visibles */}
+      <div className="absolute top-0 left-1/3 w-44 h-44 bg-gradient-to-br from-golden/40 to-red-accent/30 rounded-full blur-lg"></div>
+      <div className="absolute bottom-10 right-10 w-32 h-32 bg-gradient-to-tl from-red-accent/35 to-light-beige/60 rounded-full blur-md"></div>
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
