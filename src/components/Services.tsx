@@ -6,15 +6,15 @@ const Services = () => {
   const services = [
     {
       icon: User,
-      title: "Sesiones Individuales Pamplona",
-      description: "Terapia personalizada uno a uno en Pamplona, adaptada a tus necesidades específicas y ritmo de crecimiento personal.",
+      title: "Sesiones Individuales",
+      description: "Terapia personalizada uno a uno, adaptada a tus necesidades específicas y ritmo de crecimiento personal.",
       duration: "50 minutos",
       price: "50€"
     },
     {
       icon: Users,
-      title: "Terapia de Pareja Pamplona",
-      description: "Espacio seguro en Pamplona para mejorar la comunicación y fortalecer la relación a través del enfoque gestáltico.",
+      title: "Terapia de Pareja",
+      description: "Espacio seguro para mejorar la comunicación y fortalecer la relación a través del enfoque gestáltico.",
       duration: "60 minutos",
       price: "Desde €80"
     },
@@ -27,7 +27,7 @@ const Services = () => {
     },
     {
       icon: Headphones,
-      title: "Terapia Online desde Pamplona",
+      title: "Terapia Online",
       description: "Sesiones virtuales con la misma calidad y efectividad, desde la comodidad de tu hogar.",
       duration: "50 minutos",
       price: "50€"
@@ -39,11 +39,11 @@ const Services = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark-gray mb-6">
-            Servicios de Terapia Individual en Pamplona
+            Servicios de Terapia Individual
           </h2>
           <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
           <p className="text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
-            Ofrezco diferentes modalidades de terapia individual en Pamplona para adaptarme a tus necesidades 
+            Ofrezco diferentes modalidades de terapia individual para adaptarme a tus necesidades 
             y circunstancias personales.
           </p>
         </div>

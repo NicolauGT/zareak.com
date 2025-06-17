@@ -9,18 +9,18 @@ const Footer = () => {
               Terapia Gestalt Pamplona
             </h3>
             <p className="text-light-beige leading-relaxed">
-              Un espacio seguro para tu crecimiento personal y bienestar emocional en Pamplona. 
+              Un espacio seguro para tu crecimiento personal y bienestar emocional. 
               Acompañándote en tu proceso de autodescubrimiento y transformación.
             </p>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-golden">
-              Servicios en Pamplona
+              Servicios
             </h4>
             <ul className="space-y-2 text-light-beige">
-              <li>Terapia Individual Pamplona</li>
-              <li>Terapia de Pareja Pamplona</li>
+              <li>Terapia Individual</li>
+              <li>Terapia de Pareja</li>
               <li>Sesiones Online</li>
               <li>Workshops Intensivos</li>
             </ul>
@@ -28,7 +28,7 @@ const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-golden">
-              Contacto Pamplona
+              Contacto
             </h4>
             <div className="space-y-2 text-light-beige">
               <p>Nicolau Gómez - Terapeuta Gestalt</p>
