@@ -30,7 +30,7 @@ const Therapist = () => {
               </div>
               <div className="bg-white p-4 rounded-lg shadow-md">
                 <h4 className="font-bold text-gray-800">Especialidades</h4>
-                <p className="text-sm text-gray-600">Sistémica<br/>Teatro Terapéutico</p>
+                <p className="text-sm text-gray-600">Sistémica<br/>Teatro Terapéutico<br/>Adolescencia</p>
               </div>
             </div>
           </div>
