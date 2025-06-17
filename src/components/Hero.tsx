@@ -15,14 +15,17 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         {/* Marco con fondo transparente para el contenido */}
-        <div className="relative bg-white/20 backdrop-blur-sm border border-white/30 rounded-3xl p-12 shadow-2xl">
-          {/* Overlay de la imagen con transparencia solo dentro del marco */}
+        <div className="relative bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl p-12 shadow-2xl">
+          {/* Overlay de la imagen con mayor transparencia para atenuar el color */}
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 rounded-3xl"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15 rounded-3xl"
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000')`,
             }}
           />
+          
+          {/* Overlay adicional para mejorar la legibilidad */}
+          <div className="absolute inset-0 bg-white/40 rounded-3xl"></div>
           
           {/* Contenido del texto */}
           <div className="relative z-10">
