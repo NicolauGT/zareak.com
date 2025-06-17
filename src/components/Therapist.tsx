@@ -5,7 +5,7 @@ const Therapist = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Sobre el Terapeuta
+            Sobre el Terapeuta Gestalt en Pamplona
           </h2>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
         </div>
@@ -13,12 +13,13 @@ const Therapist = () => {
         <div className="max-w-3xl mx-auto text-center">
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-gray-800">Nicolau Gómez</h3>
+            <h4 className="text-xl text-green-600 font-semibold">Terapeuta Individual en Pamplona</h4>
             
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
-                Creo firmemente en la capacidad innata de cada persona para crecer 
-                y sanar, y mi rol es acompañarte en este proceso de autodescubrimiento 
-                desde un espacio de respeto, empatía y profesionalidad.
+                Como terapeuta gestalt en Pamplona, creo firmemente en la capacidad innata de cada persona para crecer 
+                y sanar. Mi rol es acompañarte en este proceso de autodescubrimiento 
+                desde un espacio de respeto, empatía y profesionalidad en el corazón de Pamplona.
               </p>
             </div>
 

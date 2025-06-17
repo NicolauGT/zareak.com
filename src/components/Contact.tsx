@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MessageSquare, Calendar, User } from "lucide-react";
+import { MessageSquare, Calendar, User, MapPin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -11,12 +11,12 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Comienza tu Proceso de Cambio
+            Reserva tu Cita de Terapia Individual en Pamplona
           </h2>
           <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Estoy aquí para acompañarte en tu camino hacia el bienestar. 
-            Contacta conmigo para agendar tu primera consulta.
+            Estoy aquí para acompañarte en tu camino hacia el bienestar en Pamplona. 
+            Contacta conmigo para agendar tu primera consulta de terapia gestalt.
           </p>
         </div>
 
@@ -25,23 +25,27 @@ const Contact = () => {
             <CardHeader>
               <CardTitle className="text-2xl text-gray-800 flex items-center">
                 <MessageSquare className="mr-3 h-6 w-6 text-green-600" />
-                Información de Contacto
+                Terapia Individual en Pamplona - Contacto
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <User className="h-5 w-5 text-green-600" />
-                  <span className="text-gray-700">Nicolau Gómez</span>
+                  <span className="text-gray-700">Nicolau Gómez - Terapeuta Gestalt</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MessageSquare className="h-5 w-5 text-green-600" />
                   <span className="text-gray-700">Ngt.terapeuta@gmail.com</span>
                 </div>
+                <div className="flex items-center space-x-3">
+                  <MapPin className="h-5 w-5 text-green-600" />
+                  <span className="text-gray-700">Consulta en Pamplona</span>
+                </div>
               </div>
               
               <div className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
-                <h4 className="font-bold text-green-800 mb-2">Primera Consulta</h4>
+                <h4 className="font-bold text-green-800 mb-2">Primera Consulta en Pamplona</h4>
                 <p className="text-green-700">
                   Te ofrezco una primera sesión de 30 minutos que solo tiene un 
                   coste de 10€ para que puedas conocerme y decidir si mi enfoque 
@@ -50,7 +54,7 @@ const Contact = () => {
               </div>
 
               <div className="space-y-2">
-                <h4 className="font-bold text-gray-800">Horarios de Atención</h4>
+                <h4 className="font-bold text-gray-800">Horarios de Atención en Pamplona</h4>
                 <p className="text-gray-600">Lunes a Viernes: 9:00 - 20:00</p>
                 <p className="text-gray-600">Sábados: 10:00 - 14:00</p>
               </div>
@@ -60,7 +64,7 @@ const Contact = () => {
           <Card className="shadow-xl border-0">
             <CardHeader>
               <CardTitle className="text-2xl text-gray-800">
-                Solicita tu Cita
+                Solicita tu Cita de Terapia en Pamplona
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -108,7 +112,7 @@ const Contact = () => {
                   type="submit" 
                   className="w-full bg-green-600 hover:bg-green-700 text-white py-3 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Enviar Solicitud
+                  Solicitar Cita en Pamplona
                 </Button>
               </form>
             </CardContent>

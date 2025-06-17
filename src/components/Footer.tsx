@@ -1,3 +1,4 @@
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-12 px-6">
@@ -5,21 +6,21 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4 text-green-400">
-              Terapia Gestalt
+              Terapia Gestalt Pamplona
             </h3>
             <p className="text-gray-300 leading-relaxed">
-              Un espacio seguro para tu crecimiento personal y bienestar emocional. 
+              Un espacio seguro para tu crecimiento personal y bienestar emocional en Pamplona. 
               Acompañándote en tu proceso de autodescubrimiento y transformación.
             </p>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-green-400">
-              Servicios
+              Servicios en Pamplona
             </h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Terapia Individual</li>
-              <li>Terapia de Pareja</li>
+              <li>Terapia Individual Pamplona</li>
+              <li>Terapia de Pareja Pamplona</li>
               <li>Sesiones Online</li>
               <li>Workshops Intensivos</li>
             </ul>
@@ -27,11 +28,12 @@ const Footer = () => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4 text-green-400">
-              Contacto
+              Contacto Pamplona
             </h4>
             <div className="space-y-2 text-gray-300">
-              <p>Nicolau Gómez</p>
+              <p>Nicolau Gómez - Terapeuta Gestalt</p>
               <p>Ngt.terapeuta@gmail.com</p>
+              <p>Consulta en Pamplona</p>
               <p>Lunes - Viernes: 9:00 - 20:00</p>
               <p>Sábados: 10:00 - 14:00</p>
             </div>
@@ -40,7 +42,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 Terapia Gestalt. Todos los derechos reservados.
+            © 2024 Terapia Gestalt Pamplona - Nicolau Gómez. Todos los derechos reservados.
           </p>
         </div>
       </div>

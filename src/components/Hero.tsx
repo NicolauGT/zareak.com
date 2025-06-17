@@ -31,11 +31,14 @@ const Hero = () => {
           <div className="relative z-10">
             <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6 leading-tight">
               Terapia Individual
-              <span className="block text-green-600">Gestalt</span>
+              <span className="block text-green-600">Pamplona</span>
             </h1>
+            <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
+              Terapia Gestalt con Nicolau Gómez
+            </h2>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               Descubre tu potencial interior y encuentra el equilibrio emocional que buscas. 
-              Un espacio seguro para tu crecimiento personal y bienestar.
+              Un espacio seguro para tu crecimiento personal y bienestar en Pamplona.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -43,7 +46,7 @@ const Hero = () => {
                 className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Calendar className="mr-2 h-5 w-5" />
-                Reservar Cita
+                Reservar Cita en Pamplona
               </Button>
               <Button 
                 variant="outline" 
