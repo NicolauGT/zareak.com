@@ -16,7 +16,7 @@ const Benefits = () => {
   const getPositionClasses = (index: number) => {
     // Distribución circular equidistante con 8 posiciones
     const angle = (index * 360) / 8 - 90; // -90 para empezar desde arriba
-    const radius = 180; // Radio del círculo
+    const radius = 200; // Radio aumentado para evitar superposiciones
     const x = Math.cos((angle * Math.PI) / 180) * radius;
     const y = Math.sin((angle * Math.PI) / 180) * radius;
     
@@ -25,8 +25,8 @@ const Benefits = () => {
       position: 'absolute' as const,
       top: '50%',
       left: '50%',
-      marginLeft: '-50px', // Centro del elemento (100px/2)
-      marginTop: '-40px'   // Centro del elemento (80px/2)
+      marginLeft: '-60px', // Centro del elemento ajustado
+      marginTop: '-30px'   // Centro del elemento ajustado
     };
   };
 
@@ -44,31 +44,38 @@ const Benefits = () => {
         </div>
 
         {/* Ilustración principal */}
-        <div className="relative mx-auto max-w-4xl h-[600px] bg-gradient-to-br from-light-beige/30 to-light-beige/10 rounded-3xl overflow-hidden mb-12">
+        <div className="relative mx-auto max-w-5xl h-[700px] bg-gradient-to-br from-light-beige/30 to-light-beige/10 rounded-3xl overflow-hidden mb-12">
           
-          {/* Persona en el centro con estilo modernista geométrico */}
+          {/* Persona en el centro con estilo simple y geométrico */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <svg width="120" height="140" viewBox="0 0 120 140" className="text-dark-gray">
-              {/* Cabeza - círculo */}
-              <circle cx="60" cy="25" r="20" fill="var(--color-light-beige)" stroke="var(--color-dark-gray)" strokeWidth="4"/>
+            <svg width="100" height="120" viewBox="0 0 100 120" className="text-dark-gray">
+              {/* Cabeza - círculo simple */}
+              <circle cx="50" cy="20" r="15" fill="#F5E6D3" stroke="#2D3748" strokeWidth="3"/>
               
-              {/* Torso - forma geométrica */}
-              <path d="M40 45 L80 45 L85 90 L35 90 Z" fill="var(--color-golden)" stroke="var(--color-dark-gray)" strokeWidth="4"/>
+              {/* Cara - puntos para ojos */}
+              <circle cx="45" cy="18" r="1.5" fill="#2D3748"/>
+              <circle cx="55" cy="18" r="1.5" fill="#2D3748"/>
               
-              {/* Brazo izquierdo */}
-              <path d="M35 55 L15 75 L20 85 L40 65" fill="var(--color-red-accent)" stroke="var(--color-dark-gray)" strokeWidth="3"/>
+              {/* Sonrisa simple */}
+              <path d="M45 23 Q50 26 55 23" stroke="#2D3748" strokeWidth="2" fill="none"/>
               
-              {/* Brazo derecho */}
-              <path d="M85 55 L105 75 L100 85 L80 65" fill="var(--color-red-accent)" stroke="var(--color-dark-gray)" strokeWidth="3"/>
+              {/* Cuello */}
+              <rect x="47" y="35" width="6" height="8" fill="#F5E6D3" stroke="#2D3748" strokeWidth="2"/>
               
-              {/* Piernas - formas geométricas */}
-              <path d="M35 90 L25 125 L35 130 L45 95" fill="var(--color-medium-gray)" stroke="var(--color-dark-gray)" strokeWidth="3"/>
-              <path d="M85 90 L95 125 L85 130 L75 95" fill="var(--color-medium-gray)" stroke="var(--color-dark-gray)" strokeWidth="3"/>
+              {/* Torso - rectángulo simple */}
+              <rect x="35" y="43" width="30" height="35" fill="#D4AF37" stroke="#2D3748" strokeWidth="3" rx="3"/>
               
-              {/* Detalles decorativos */}
-              <circle cx="52" cy="20" r="2" fill="var(--color-dark-gray)"/>
-              <circle cx="68" cy="20" r="2" fill="var(--color-dark-gray)"/>
-              <path d="M55 30 Q60 35 65 30" stroke="var(--color-dark-gray)" strokeWidth="2" fill="none"/>
+              {/* Brazos - líneas simples */}
+              <rect x="20" y="50" width="15" height="6" fill="#E53E3E" stroke="#2D3748" strokeWidth="2" rx="3"/>
+              <rect x="65" y="50" width="15" height="6" fill="#E53E3E" stroke="#2D3748" strokeWidth="2" rx="3"/>
+              
+              {/* Piernas - rectángulos */}
+              <rect x="40" y="78" width="8" height="25" fill="#718096" stroke="#2D3748" strokeWidth="2" rx="2"/>
+              <rect x="52" y="78" width="8" height="25" fill="#718096" stroke="#2D3748" strokeWidth="2" rx="2"/>
+              
+              {/* Pies - óvalos pequeños */}
+              <ellipse cx="44" cy="108" rx="6" ry="3" fill="#2D3748"/>
+              <ellipse cx="56" cy="108" rx="6" ry="3" fill="#2D3748"/>
             </svg>
           </div>
 
@@ -84,14 +91,14 @@ const Benefits = () => {
                   animationDelay: `${index * 0.1}s`
                 }}
               >
-                <div className="flex flex-col items-center w-24">
+                <div className="flex flex-col items-center w-28">
                   {/* Círculo del beneficio */}
-                  <div className="w-12 h-12 bg-white border-2 border-golden rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 mb-3">
+                  <div className="w-12 h-12 bg-white border-3 border-golden rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 mb-3">
                     <benefit.icon className="w-5 h-5 text-red-accent" />
                   </div>
                   
-                  {/* Texto del beneficio */}
-                  <div className="bg-white/95 backdrop-blur-sm border border-golden/30 rounded-lg px-2 py-1 shadow-md">
+                  {/* Texto del beneficio - siempre visible */}
+                  <div className="bg-white border-2 border-golden/30 rounded-lg px-3 py-2 shadow-md">
                     <p className="text-xs font-medium text-dark-gray text-center leading-tight">
                       {benefit.text}
                     </p>
@@ -99,7 +106,7 @@ const Benefits = () => {
 
                   {/* Línea conectora hacia el centro */}
                   <div 
-                    className="absolute w-16 h-0.5 bg-golden/40 origin-left"
+                    className="absolute w-20 h-0.5 bg-golden/40 origin-left"
                     style={{
                       top: '24px',
                       left: '24px',
