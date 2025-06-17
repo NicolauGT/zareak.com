@@ -9,9 +9,9 @@ const Contact = () => {
   return (
     <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
-      <div className="absolute top-10 left-0 w-52 h-52 bg-gradient-to-br from-golden/25 to-red-accent/25 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 right-0 w-40 h-40 bg-gradient-to-tl from-light-beige/60 to-golden/35 rounded-full blur-lg"></div>
-      <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-l from-red-accent/30 to-golden/25 rounded-full blur-md"></div>
+      <div className="absolute top-10 left-0 w-52 h-52 bg-gradient-to-br from-golden/40 to-red-accent/40 rounded-full blur-sm"></div>
+      <div className="absolute bottom-20 right-0 w-40 h-40 bg-gradient-to-tl from-light-beige/80 to-golden/55 rounded-full blur-sm"></div>
+      <div className="absolute top-1/2 right-1/4 w-24 h-24 bg-gradient-to-l from-red-accent/45 to-golden/40 rounded-full blur-sm"></div>
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">

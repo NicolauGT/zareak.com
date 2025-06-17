@@ -2,8 +2,8 @@
 const About = () => {
   return <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
-      <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-golden/40 to-red-accent/35 rounded-full blur-lg"></div>
-      <div className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-tl from-light-beige/60 to-golden/45 rounded-full blur-md"></div>
+      <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-golden/60 to-red-accent/50 rounded-full blur-sm"></div>
+      <div className="absolute bottom-20 right-20 w-24 h-24 bg-gradient-to-tl from-light-beige/80 to-golden/65 rounded-full blur-sm"></div>
       
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16">
