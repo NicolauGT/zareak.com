@@ -9,7 +9,7 @@ const Services = () => {
       title: "Sesiones Individuales",
       description: "Terapia personalizada uno a uno, adaptada a tus necesidades específicas y ritmo de crecimiento personal.",
       duration: "50 minutos",
-      price: "Desde €60"
+      price: "50€"
     },
     {
       icon: Users,
@@ -30,7 +30,7 @@ const Services = () => {
       title: "Terapia Online",
       description: "Sesiones virtuales con la misma calidad y efectividad, desde la comodidad de tu hogar.",
       duration: "50 minutos",
-      price: "Desde €55"
+      price: "50€"
     }
   ];
 

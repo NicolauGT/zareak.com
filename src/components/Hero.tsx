@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
 
@@ -7,7 +8,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1439337153520-7082a56a81f4?q=80&w=2000')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000')`,
         }}
       />
       
