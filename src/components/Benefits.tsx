@@ -57,40 +57,58 @@ const Benefits = () => {
             <div className="w-full h-full bg-gradient-to-t from-golden/40 via-golden/20 to-transparent rounded-t-full"></div>
           </div>
 
-          {/* Figura de la persona caminando (usando formas SVG simples) */}
+          {/* Figura de la persona en estilo modernista de líneas */}
           <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 z-20">
-            <div className="relative">
-              {/* Cuerpo */}
-              <div className="w-8 h-12 bg-dark-gray rounded-full mb-2"></div>
+            <svg width="60" height="80" viewBox="0 0 60 80" className="text-dark-gray">
               {/* Cabeza */}
-              <div className="w-6 h-6 bg-medium-gray rounded-full mx-auto -mt-2"></div>
-              {/* Brazos en movimiento */}
-              <div className="absolute top-2 -left-2 w-3 h-8 bg-dark-gray rounded-full transform rotate-12"></div>
-              <div className="absolute top-2 -right-2 w-3 h-8 bg-dark-gray rounded-full transform -rotate-12"></div>
-              {/* Piernas */}
-              <div className="absolute bottom-0 left-1 w-3 h-6 bg-dark-gray rounded-full transform rotate-6"></div>
-              <div className="absolute bottom-0 right-1 w-3 h-6 bg-dark-gray rounded-full transform -rotate-6"></div>
-            </div>
+              <circle cx="30" cy="15" r="12" fill="none" stroke="currentColor" strokeWidth="3"/>
+              
+              {/* Torso */}
+              <line x1="30" y1="27" x2="30" y2="50" stroke="currentColor" strokeWidth="3"/>
+              
+              {/* Brazo izquierdo en movimiento */}
+              <line x1="30" y1="35" x2="20" y2="45" stroke="currentColor" strokeWidth="3"/>
+              <line x1="20" y1="45" x2="15" y2="55" stroke="currentColor" strokeWidth="3"/>
+              
+              {/* Brazo derecho en movimiento */}
+              <line x1="30" y1="35" x2="40" y2="40" stroke="currentColor" strokeWidth="3"/>
+              <line x1="40" y1="40" x2="45" y2="50" stroke="currentColor" strokeWidth="3"/>
+              
+              {/* Pierna izquierda */}
+              <line x1="30" y1="50" x2="22" y2="65" stroke="currentColor" strokeWidth="3"/>
+              <line x1="22" y1="65" x2="18" y2="78" stroke="currentColor" strokeWidth="3"/>
+              
+              {/* Pierna derecha */}
+              <line x1="30" y1="50" x2="38" y2="65" stroke="currentColor" strokeWidth="3"/>
+              <line x1="38" y1="65" x2="42" y2="78" stroke="currentColor" strokeWidth="3"/>
+            </svg>
           </div>
 
           {/* Beneficios flotantes alrededor */}
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className={`${getPositionClasses(benefit.position)} group cursor-pointer`}
+              className={`${getPositionClasses(benefit.position)} group`}
               style={{
                 animation: `float ${3 + (index * 0.5)}s ease-in-out infinite`,
                 animationDelay: `${index * 0.2}s`
               }}
             >
-              <div className="relative">
+              <div className="relative flex flex-col items-center">
                 {/* Círculo del beneficio */}
-                <div className="w-12 h-12 md:w-16 md:h-16 bg-white border-2 border-golden rounded-full flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-white border-2 border-golden rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 mb-2">
                   <benefit.icon className="w-5 h-5 md:w-6 md:h-6 text-red-accent" />
                 </div>
                 
+                {/* Texto del beneficio siempre visible */}
+                <div className="bg-white/90 backdrop-blur-sm border border-golden/30 rounded-lg px-3 py-2 shadow-md max-w-32 md:max-w-40">
+                  <p className="text-xs md:text-sm font-medium text-dark-gray text-center leading-tight">
+                    {benefit.text}
+                  </p>
+                </div>
+
                 {/* Línea conectora */}
-                <div className="absolute top-1/2 left-1/2 w-16 md:w-24 h-0.5 bg-golden/50 transform -translate-y-1/2 origin-left"
+                <div className="absolute top-6 md:top-8 left-1/2 w-8 md:w-12 h-0.5 bg-golden/50 transform -translate-x-1/2 -translate-y-1/2"
                      style={{
                        transform: `translate(-50%, -50%) rotate(${
                          benefit.position.includes('left') ? '45deg' :
@@ -98,14 +116,6 @@ const Benefits = () => {
                          benefit.position.includes('top') ? '90deg' : '-90deg'
                        })`
                      }}>
-                </div>
-
-                {/* Tooltip con el texto */}
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                  <div className="bg-dark-gray text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap">
-                    {benefit.text}
-                    <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-dark-gray"></div>
-                  </div>
                 </div>
               </div>
             </div>
