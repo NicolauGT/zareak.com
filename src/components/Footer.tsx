@@ -1,24 +1,24 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12 px-6">
+    <footer className="bg-dark-gray text-white py-12 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-green-400">
+            <h3 className="text-2xl font-bold mb-4 text-golden">
               Terapia Gestalt Pamplona
             </h3>
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-light-beige leading-relaxed">
               Un espacio seguro para tu crecimiento personal y bienestar emocional en Pamplona. 
               Acompañándote en tu proceso de autodescubrimiento y transformación.
             </p>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-green-400">
+            <h4 className="text-lg font-semibold mb-4 text-golden">
               Servicios en Pamplona
             </h4>
-            <ul className="space-y-2 text-gray-300">
+            <ul className="space-y-2 text-light-beige">
               <li>Terapia Individual Pamplona</li>
               <li>Terapia de Pareja Pamplona</li>
               <li>Sesiones Online</li>
@@ -27,10 +27,10 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-green-400">
+            <h4 className="text-lg font-semibold mb-4 text-golden">
               Contacto Pamplona
             </h4>
-            <div className="space-y-2 text-gray-300">
+            <div className="space-y-2 text-light-beige">
               <p>Nicolau Gómez - Terapeuta Gestalt</p>
               <p>Ngt.terapeuta@gmail.com</p>
               <p>Consulta en Pamplona</p>
@@ -40,8 +40,8 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400">
+        <div className="border-t border-medium-gray mt-8 pt-8 text-center">
+          <p className="text-light-beige">
             © 2024 Terapia Gestalt Pamplona - Nicolau Gómez. Todos los derechos reservados.
           </p>
         </div>

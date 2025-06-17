@@ -35,14 +35,14 @@ const Services = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-gradient-to-b from-green-50 to-white">
+    <section className="py-20 px-6 bg-light-beige">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+          <h2 className="text-4xl font-bold text-dark-gray mb-6">
             Servicios de Terapia Individual en Pamplona
           </h2>
-          <div className="w-24 h-1 bg-green-600 mx-auto mb-8"></div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
+          <p className="text-xl text-medium-gray max-w-3xl mx-auto leading-relaxed">
             Ofrezco diferentes modalidades de terapia individual en Pamplona para adaptarme a tus necesidades 
             y circunstancias personales.
           </p>
@@ -55,16 +55,16 @@ const Services = () => {
               className="hover:shadow-xl transition-shadow duration-300 border-0 shadow-lg bg-white"
             >
               <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <service.icon className="h-8 w-8 text-green-600" />
+                <div className="w-16 h-16 bg-light-beige rounded-full flex items-center justify-center mx-auto mb-4">
+                  <service.icon className="h-8 w-8 text-golden" />
                 </div>
-                <CardTitle className="text-xl text-gray-800">{service.title}</CardTitle>
+                <CardTitle className="text-xl text-dark-gray">{service.title}</CardTitle>
               </CardHeader>
               <CardContent className="text-center space-y-4">
-                <p className="text-gray-600 leading-relaxed">{service.description}</p>
+                <p className="text-medium-gray leading-relaxed">{service.description}</p>
                 <div className="space-y-2">
-                  <p className="text-sm text-green-600 font-medium">Duración: {service.duration}</p>
-                  <p className="text-lg font-bold text-gray-800">{service.price}</p>
+                  <p className="text-sm text-golden font-medium">Duración: {service.duration}</p>
+                  <p className="text-lg font-bold text-dark-gray">{service.price}</p>
                 </div>
               </CardContent>
             </Card>
