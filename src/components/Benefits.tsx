@@ -14,9 +14,8 @@ const Benefits = () => {
   ];
 
   const getPositionClasses = (index: number) => {
-    // Distribución circular equidistante con 8 posiciones
     const angle = (index * 360) / 8 - 90; // -90 para empezar desde arriba
-    const radius = 240; // Radio optimizado para evitar superposiciones
+    const radius = 320; // Radio aumentado para evitar superposiciones
     const x = Math.cos((angle * Math.PI) / 180) * radius;
     const y = Math.sin((angle * Math.PI) / 180) * radius;
     
@@ -25,8 +24,8 @@ const Benefits = () => {
       position: 'absolute' as const,
       top: '50%',
       left: '50%',
-      marginLeft: '-50px', // Centrado para elementos de 100px de ancho
-      marginTop: '-40px'   // Centrado para elementos de 80px de alto
+      marginLeft: '-60px', // Centrado para elementos de 120px de ancho
+      marginTop: '-30px'   // Centrado para elementos de 60px de alto
     };
   };
 
@@ -34,46 +33,46 @@ const Benefits = () => {
     <section className="py-20 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-dark-gray mb-6">
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Beneficios de la Terapia Gestalt
           </h2>
-          <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
-          <p className="text-xl text-medium-gray mb-8 leading-relaxed max-w-3xl mx-auto">
+          <div className="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
+          <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
             Un viaje transformador hacia tu bienestar emocional y crecimiento personal.
           </p>
         </div>
 
-        {/* Ilustración principal con altura aumentada */}
-        <div className="relative mx-auto max-w-5xl h-[700px] bg-gradient-to-br from-light-beige/30 to-light-beige/10 rounded-3xl overflow-hidden mb-12">
+        {/* Ilustración principal completamente rediseñada */}
+        <div className="relative mx-auto max-w-6xl h-[800px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-12">
           
-          {/* Persona rediseñada - estilo simple y minimalista como la imagen de referencia */}
+          {/* Persona rediseñada - estilo simple y moderno */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <svg width="80" height="120" viewBox="0 0 80 120" className="text-dark-gray">
+            <svg width="100" height="140" viewBox="0 0 100 140" className="drop-shadow-lg">
               {/* Cabeza - círculo simple */}
-              <circle cx="40" cy="18" r="15" fill="#F5E6D3" stroke="#2D3748" strokeWidth="3" strokeLinecap="round"/>
+              <circle cx="50" cy="25" r="18" fill="#FED7AA" stroke="#374151" strokeWidth="4"/>
               
-              {/* Cara minimalista - solo puntos para ojos y sonrisa */}
-              <circle cx="35" cy="16" r="1.5" fill="#2D3748"/>
-              <circle cx="45" cy="16" r="1.5" fill="#2D3748"/>
-              <path d="M35 22 Q40 25 45 22" stroke="#2D3748" strokeWidth="2" fill="none" strokeLinecap="round"/>
+              {/* Cara minimalista */}
+              <circle cx="44" cy="22" r="2" fill="#374151"/>
+              <circle cx="56" cy="22" r="2" fill="#374151"/>
+              <path d="M44 30 Q50 34 56 30" stroke="#374151" strokeWidth="3" fill="none" strokeLinecap="round"/>
               
               {/* Cuello */}
-              <rect x="37" y="33" width="6" height="8" fill="#F5E6D3" stroke="#2D3748" strokeWidth="3" rx="3" strokeLinecap="round"/>
+              <rect x="46" y="43" width="8" height="10" fill="#FED7AA" stroke="#374151" strokeWidth="4" rx="4"/>
               
-              {/* Torso - rectángulo redondeado */}
-              <rect x="28" y="41" width="24" height="35" fill="#D4AF37" stroke="#2D3748" strokeWidth="3" rx="8" strokeLinecap="round"/>
+              {/* Torso */}
+              <rect x="35" y="53" width="30" height="40" fill="#FDE047" stroke="#374151" strokeWidth="4" rx="12"/>
               
-              {/* Brazos - líneas simples redondeadas */}
-              <rect x="15" y="48" width="13" height="5" fill="#E53E3E" stroke="#2D3748" strokeWidth="3" rx="2.5" strokeLinecap="round"/>
-              <rect x="52" y="48" width="13" height="5" fill="#E53E3E" stroke="#2D3748" strokeWidth="3" rx="2.5" strokeLinecap="round"/>
+              {/* Brazos */}
+              <rect x="20" y="62" width="15" height="8" fill="#F87171" stroke="#374151" strokeWidth="4" rx="4"/>
+              <rect x="65" y="62" width="15" height="8" fill="#F87171" stroke="#374151" strokeWidth="4" rx="4"/>
               
-              {/* Piernas - rectángulos redondeados */}
-              <rect x="32" y="76" width="6" height="28" fill="#718096" stroke="#2D3748" strokeWidth="3" rx="3" strokeLinecap="round"/>
-              <rect x="42" y="76" width="6" height="28" fill="#718096" stroke="#2D3748" strokeWidth="3" rx="3" strokeLinecap="round"/>
+              {/* Piernas */}
+              <rect x="40" y="93" width="8" height="32" fill="#6B7280" stroke="#374151" strokeWidth="4" rx="4"/>
+              <rect x="52" y="93" width="8" height="32" fill="#6B7280" stroke="#374151" strokeWidth="4" rx="4"/>
               
-              {/* Pies - óvalos simples */}
-              <ellipse cx="35" cy="110" rx="5" ry="2.5" fill="#2D3748"/>
-              <ellipse cx="45" cy="110" rx="5" ry="2.5" fill="#2D3748"/>
+              {/* Pies */}
+              <ellipse cx="44" cy="130" rx="6" ry="3" fill="#374151"/>
+              <ellipse cx="56" cy="130" rx="6" ry="3" fill="#374151"/>
             </svg>
           </div>
 
@@ -85,29 +84,29 @@ const Benefits = () => {
                 className="group"
                 style={{
                   ...getPositionClasses(index),
-                  animation: `float ${3 + (index * 0.2)}s ease-in-out infinite`,
-                  animationDelay: `${index * 0.1}s`
+                  animation: `float ${3 + (index * 0.3)}s ease-in-out infinite`,
+                  animationDelay: `${index * 0.2}s`
                 }}
               >
-                <div className="flex flex-col items-center w-[100px]">
-                  {/* Círculo del beneficio */}
-                  <div className="w-10 h-10 bg-white border-2 border-golden rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110 mb-2">
-                    <benefit.icon className="w-4 h-4 text-red-accent" />
+                <div className="flex flex-col items-center w-[120px]">
+                  {/* Círculo del beneficio más grande */}
+                  <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-xl transition-all duration-300 hover:scale-110 mb-3">
+                    <benefit.icon className="w-5 h-5 text-red-500" />
                   </div>
                   
-                  {/* Texto del beneficio */}
-                  <div className="bg-white border-2 border-golden/30 rounded-lg px-2 py-1.5 shadow-md w-full">
-                    <p className="text-xs font-medium text-dark-gray text-center leading-tight">
+                  {/* Texto del beneficio con mejor diseño */}
+                  <div className="bg-white border-2 border-yellow-400/50 rounded-xl px-3 py-2 shadow-lg w-full">
+                    <p className="text-sm font-semibold text-gray-800 text-center leading-tight">
                       {benefit.text}
                     </p>
                   </div>
 
                   {/* Línea conectora hacia el centro */}
                   <div 
-                    className="absolute w-20 h-0.5 bg-golden/40 origin-left"
+                    className="absolute w-24 h-0.5 bg-yellow-400/60 origin-left"
                     style={{
-                      top: '20px',
-                      left: '20px',
+                      top: '24px',
+                      left: '24px',
                       transform: `rotate(${(index * 360) / 8 + 90}deg)`,
                       transformOrigin: '0 50%'
                     }}
@@ -117,16 +116,16 @@ const Benefits = () => {
             ))}
           </div>
 
-          {/* Partículas flotantes decorativas */}
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-red-accent/60 rounded-full animate-pulse"></div>
-          <div className="absolute top-1/3 right-1/4 w-3 h-3 bg-golden/60 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-          <div className="absolute bottom-1/3 left-1/5 w-2 h-2 bg-red-accent/60 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
-          <div className="absolute bottom-1/4 right-1/3 w-2 h-2 bg-golden/60 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          {/* Partículas decorativas mejoradas */}
+          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-red-400/70 rounded-full animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/4 w-4 h-4 bg-yellow-400/70 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-1/3 left-1/5 w-3 h-3 bg-red-400/70 rounded-full animate-pulse" style={{animationDelay: '2s'}}></div>
+          <div className="absolute bottom-1/4 right-1/3 w-3 h-3 bg-yellow-400/70 rounded-full animate-pulse" style={{animationDelay: '0.5s'}}></div>
         </div>
 
-        {/* Resultado final */}
+        {/* Resultado final mejorado */}
         <div className="text-center">
-          <div className="inline-block bg-gradient-to-r from-golden to-red-accent text-white px-8 py-4 rounded-2xl shadow-xl">
+          <div className="inline-block bg-gradient-to-r from-yellow-500 to-red-500 text-white px-10 py-5 rounded-3xl shadow-2xl">
             <h3 className="text-2xl font-bold mb-2">Resultado</h3>
             <p className="text-xl font-semibold">Bienestar Psicoemocional Integral</p>
           </div>
@@ -139,7 +138,7 @@ const Benefits = () => {
             transform: translateY(0px);
           }
           50% {
-            transform: translateY(-8px);
+            transform: translateY(-10px);
           }
         }
       `}</style>
