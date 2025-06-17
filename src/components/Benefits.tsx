@@ -35,16 +35,14 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Beneficios en posiciones fijas alrededor del círculo */}
-          
           {/* Top */}
           <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[0].icon className="w-5 h-5 text-red-500" />
+                <Eye className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[0].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Mayor autoconocimiento</p>
               </div>
             </div>
           </div>
@@ -53,10 +51,10 @@ const Benefits = () => {
           <div className="absolute top-16 right-8">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[1].icon className="w-5 h-5 text-red-500" />
+                <Heart className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[1].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Gestión emocional</p>
               </div>
             </div>
           </div>
@@ -65,10 +63,10 @@ const Benefits = () => {
           <div className="absolute top-1/2 right-8 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[2].icon className="w-5 h-5 text-red-500" />
+                <User className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[2].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Relaciones auténticas</p>
               </div>
             </div>
           </div>
@@ -77,10 +75,10 @@ const Benefits = () => {
           <div className="absolute bottom-16 right-8">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[3].icon className="w-5 h-5 text-red-500" />
+                <Brain className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[3].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Resolución de conflictos</p>
               </div>
             </div>
           </div>
@@ -89,10 +87,10 @@ const Benefits = () => {
           <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[4].icon className="w-5 h-5 text-red-500" />
+                <Star className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[4].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Autoestima y confianza</p>
               </div>
             </div>
           </div>
@@ -101,10 +99,10 @@ const Benefits = () => {
           <div className="absolute bottom-16 left-8">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[5].icon className="w-5 h-5 text-red-500" />
+                <Lightbulb className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[5].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Mejor comunicación</p>
               </div>
             </div>
           </div>
@@ -113,10 +111,10 @@ const Benefits = () => {
           <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[6].icon className="w-5 h-5 text-red-500" />
+                <CheckCircle className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[6].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Claridad en decisiones</p>
               </div>
             </div>
           </div>
@@ -125,10 +123,10 @@ const Benefits = () => {
           <div className="absolute top-16 left-8">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <benefits[7].icon className="w-5 h-5 text-red-500" />
+                <ArrowRight className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">{benefits[7].text}</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Liberación de patrones</p>
               </div>
             </div>
           </div>
