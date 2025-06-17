@@ -1,6 +1,6 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { User, Users, Calendar, HeadPhones } from "lucide-react";
+import { User, Users, Calendar, Headphones } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -26,7 +26,7 @@ const Services = () => {
       price: "Desde €150"
     },
     {
-      icon: HeadPhones,
+      icon: Headphones,
       title: "Terapia Online",
       description: "Sesiones virtuales con la misma calidad y efectividad, desde la comodidad de tu hogar.",
       duration: "50 minutos",
