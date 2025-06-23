@@ -3,14 +3,14 @@ import { CheckCircle, User, Heart, Brain, Eye, Lightbulb, Star, ArrowRight } fro
 
 const Benefits = () => {
   return (
-    <section className="py-20 px-6 bg-white relative overflow-hidden">
+    <section className="py-16 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
       <div className="absolute top-20 right-10 w-40 h-40 bg-gradient-to-bl from-golden/55 to-red-accent/45 rounded-full blur-sm"></div>
       <div className="absolute bottom-0 left-0 w-56 h-56 bg-gradient-to-tr from-light-beige/70 to-golden/55 rounded-full blur-sm"></div>
       <div className="absolute top-1/3 left-20 w-28 h-28 bg-gradient-to-r from-red-accent/40 to-golden/60 rounded-full blur-sm"></div>
       
-      <div className="max-w-6xl mx-auto relative z-10">
-        <div className="text-center mb-16">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Beneficios de la Terapia Gestalt
           </h2>
@@ -20,9 +20,9 @@ const Benefits = () => {
           </p>
         </div>
 
-        <div className="relative mx-auto w-[700px] h-[700px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-12">
+        <div className="relative mx-auto w-[1200px] h-[500px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-10">
           
-          {/* Imagen de terapia en el centro - más grande */}
+          {/* Imagen de terapia en el centro */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
             <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-yellow-500 overflow-hidden">
               <img 
@@ -33,8 +33,19 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Top - más alejado */}
-          <div className="absolute top-12 left-1/2 transform -translate-x-1/2">
+          {/* Fila superior */}
+          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 flex space-x-24">
+            {/* Top Left */}
+            <div className="flex flex-col items-center w-32">
+              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
+                <ArrowRight className="w-5 h-5 text-red-500" />
+              </div>
+              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-gray-800 text-center">Liberación de patrones</p>
+              </div>
+            </div>
+
+            {/* Top Center */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Eye className="w-5 h-5 text-red-500" />
@@ -43,10 +54,8 @@ const Benefits = () => {
                 <p className="text-xs font-semibold text-gray-800 text-center">Mayor autoconocimiento</p>
               </div>
             </div>
-          </div>
 
-          {/* Top Right - más alejado */}
-          <div className="absolute top-20 right-12">
+            {/* Top Right */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Heart className="w-5 h-5 text-red-500" />
@@ -57,56 +66,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Right - más alejado */}
-          <div className="absolute top-1/2 right-12 transform -translate-y-1/2">
-            <div className="flex flex-col items-center w-32">
-              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <User className="w-5 h-5 text-red-500" />
-              </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Relaciones auténticas</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Right - más alejado */}
-          <div className="absolute bottom-20 right-12">
-            <div className="flex flex-col items-center w-32">
-              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <Brain className="w-5 h-5 text-red-500" />
-              </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Resolución de conflictos</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom - más alejado */}
-          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
-            <div className="flex flex-col items-center w-32">
-              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <Star className="w-5 h-5 text-red-500" />
-              </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Autoestima y confianza</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom Left - más alejado */}
-          <div className="absolute bottom-20 left-12">
-            <div className="flex flex-col items-center w-32">
-              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <Lightbulb className="w-5 h-5 text-red-500" />
-              </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Mejor comunicación</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Left - más alejado */}
-          <div className="absolute top-1/2 left-12 transform -translate-y-1/2">
+          {/* Fila media - lados */}
+          <div className="absolute top-1/2 left-16 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <CheckCircle className="w-5 h-5 text-red-500" />
@@ -117,14 +78,46 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Top Left - más alejado */}
-          <div className="absolute top-20 left-12">
+          <div className="absolute top-1/2 right-16 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
-                <ArrowRight className="w-5 h-5 text-red-500" />
+                <User className="w-5 h-5 text-red-500" />
               </div>
               <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Liberación de patrones</p>
+                <p className="text-xs font-semibold text-gray-800 text-center">Relaciones auténticas</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Fila inferior */}
+          <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-24">
+            {/* Bottom Left */}
+            <div className="flex flex-col items-center w-32">
+              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
+                <Lightbulb className="w-5 h-5 text-red-500" />
+              </div>
+              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-gray-800 text-center">Mejor comunicación</p>
+              </div>
+            </div>
+
+            {/* Bottom Center */}
+            <div className="flex flex-col items-center w-32">
+              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
+                <Brain className="w-5 h-5 text-red-500" />
+              </div>
+              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-gray-800 text-center">Resolución de conflictos</p>
+              </div>
+            </div>
+
+            {/* Bottom Right */}
+            <div className="flex flex-col items-center w-32">
+              <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
+                <Star className="w-5 h-5 text-red-500" />
+              </div>
+              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-gray-800 text-center">Autoestima y confianza</p>
               </div>
             </div>
           </div>
