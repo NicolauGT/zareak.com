@@ -12,27 +12,41 @@ const Therapist = () => {
           <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
         </div>
 
-        <div className="max-w-3xl mx-auto text-center">
-          <div className="space-y-6">
-            <h3 className="text-3xl font-bold text-dark-gray">Nicolau Gómez</h3>
-            <h4 className="text-xl text-golden font-semibold">Terapeuta Individual</h4>
-            
-            <div className="space-y-4 text-medium-gray leading-relaxed">
-              <p>
-                Como terapeuta gestalt, creo firmemente en la capacidad innata de cada persona para crecer 
-                y sanar. Mi rol es acompañarte en este proceso de autodescubrimiento 
-                desde un espacio de respeto, empatía y profesionalidad.
-              </p>
+        <div className="max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Contenido de texto */}
+            <div className="space-y-6">
+              <h3 className="text-3xl font-bold text-dark-gray">Nicolau Gómez</h3>
+              <h4 className="text-xl text-golden font-semibold">Sobre mi</h4>
+              
+              <div className="space-y-4 text-medium-gray leading-relaxed">
+                <p>
+                  Como terapeuta gestalt, creo firmemente en la capacidad innata de cada persona para crecer 
+                  y sanar. Mi rol es acompañarte en este proceso de autodescubrimiento 
+                  desde un espacio de respeto, empatía y profesionalidad.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <div className="bg-light-blue p-4 rounded-lg shadow-md border-l-4 border-golden">
+                  <h4 className="font-bold text-dark-gray">Formación</h4>
+                  <p className="text-sm text-medium-gray">Terapia Gestalt<br />Psicología Integral</p>
+                </div>
+                <div className="bg-light-blue p-4 rounded-lg shadow-md border-l-4 border-golden">
+                  <h4 className="font-bold text-dark-gray">Especialidades</h4>
+                  <p className="text-sm text-medium-gray">Sistémica<br />Teatro Terapéutico<br />Adolescencia</p>
+                </div>
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 max-w-lg mx-auto">
-              <div className="bg-light-blue p-4 rounded-lg shadow-md border-l-4 border-golden">
-                <h4 className="font-bold text-dark-gray">Formación</h4>
-                <p className="text-sm text-medium-gray">Terapia Gestalt<br />Psicología Integral</p>
-              </div>
-              <div className="bg-light-blue p-4 rounded-lg shadow-md border-l-4 border-golden">
-                <h4 className="font-bold text-dark-gray">Especialidades</h4>
-                <p className="text-sm text-medium-gray">Sistémica<br />Teatro Terapéutico<br />Adolescencia</p>
+            {/* Fotografía */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src="/lovable-uploads/cc29a32f-dd4d-47ae-bc6b-08e159b4961b.png" 
+                  alt="Nicolau Gómez - Terapeuta Gestalt"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
