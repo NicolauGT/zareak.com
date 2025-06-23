@@ -20,21 +20,21 @@ const Benefits = () => {
           </p>
         </div>
 
-        <div className="relative mx-auto w-[600px] h-[600px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-12">
+        <div className="relative mx-auto w-[700px] h-[700px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-12">
           
-          {/* Imagen de terapia en el centro */}
+          {/* Imagen de terapia en el centro - más grande */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-yellow-500 overflow-hidden">
+            <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-yellow-500 overflow-hidden">
               <img 
                 src="/lovable-uploads/d00f9eb6-0b85-47c9-81bf-72184fb1f5b0.png" 
                 alt="Terapia Gestalt - Sesión de terapia"
-                className="w-20 h-20 object-cover rounded-full"
+                className="w-36 h-36 object-cover rounded-full"
               />
             </div>
           </div>
 
-          {/* Top */}
-          <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
+          {/* Top - más alejado */}
+          <div className="absolute top-12 left-1/2 transform -translate-x-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Eye className="w-5 h-5 text-red-500" />
@@ -45,8 +45,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Top Right */}
-          <div className="absolute top-16 right-8">
+          {/* Top Right - más alejado */}
+          <div className="absolute top-20 right-12">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Heart className="w-5 h-5 text-red-500" />
@@ -57,8 +57,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Right */}
-          <div className="absolute top-1/2 right-8 transform -translate-y-1/2">
+          {/* Right - más alejado */}
+          <div className="absolute top-1/2 right-12 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <User className="w-5 h-5 text-red-500" />
@@ -69,8 +69,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Bottom Right */}
-          <div className="absolute bottom-16 right-8">
+          {/* Bottom Right - más alejado */}
+          <div className="absolute bottom-20 right-12">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Brain className="w-5 h-5 text-red-500" />
@@ -81,8 +81,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Bottom */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          {/* Bottom - más alejado */}
+          <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Star className="w-5 h-5 text-red-500" />
@@ -93,8 +93,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Bottom Left */}
-          <div className="absolute bottom-16 left-8">
+          {/* Bottom Left - más alejado */}
+          <div className="absolute bottom-20 left-12">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Lightbulb className="w-5 h-5 text-red-500" />
@@ -105,8 +105,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Left */}
-          <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
+          {/* Left - más alejado */}
+          <div className="absolute top-1/2 left-12 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <CheckCircle className="w-5 h-5 text-red-500" />
@@ -117,8 +117,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Top Left */}
-          <div className="absolute top-16 left-8">
+          {/* Top Left - más alejado */}
+          <div className="absolute top-20 left-12">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <ArrowRight className="w-5 h-5 text-red-500" />
