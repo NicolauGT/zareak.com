@@ -1,11 +1,70 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MessageSquare, Calendar, User, MapPin } from "lucide-react";
+import { MessageSquare, Calendar, User, MapPin, Mail } from "lucide-react";
+import { useState } from "react";
+import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    apellidos: "",
+    email: "",
+    telefono: "",
+    mensaje: ""
+  });
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("Datos de contacto:", formData);
+    
+    // Crear el enlace mailto con los datos del formulario
+    const subject = encodeURIComponent("Solicitud de Cita - Terapia Gestalt");
+    const body = encodeURIComponent(
+      `Hola Nicolau,
+
+Me gustaría solicitar una cita para terapia individual.
+
+Mis datos de contacto son:
+
+Nombre: ${formData.nombre} ${formData.apellidos}
+Email: ${formData.email}
+Teléfono: ${formData.telefono}
+
+${formData.mensaje ? `Mensaje: ${formData.mensaje}` : ''}
+
+Quedo a la espera de tu respuesta.
+
+Saludos cordiales.`
+    );
+    
+    const mailtoLink = `mailto:ngt.terapeuta@gmail.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, '_blank');
+    
+    toast({
+      title: "Redirigiendo a tu cliente de correo",
+      description: "Se abrirá tu aplicación de correo con los datos completados.",
+    });
+    
+    setFormData({ nombre: "", apellidos: "", email: "", telefono: "", mensaje: "" });
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleEmailClick = () => {
+    const subject = encodeURIComponent("Consulta - Terapia Gestalt Pamplona");
+    const body = encodeURIComponent("Hola Nicolau,\n\nMe gustaría obtener más información sobre tus servicios de terapia.\n\nSaludos cordiales.");
+    const mailtoLink = `mailto:ngt.terapeuta@gmail.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, '_blank');
+  };
+
   return (
     <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
@@ -39,10 +98,13 @@ const Contact = () => {
                   <User className="h-5 w-5 text-golden" />
                   <span className="text-medium-gray">Nicolau Gómez - Terapeuta Gestalt</span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <button 
+                  onClick={handleEmailClick}
+                  className="flex items-center space-x-3 hover:text-golden transition-colors cursor-pointer text-left"
+                >
                   <MessageSquare className="h-5 w-5 text-golden" />
-                  <span className="text-medium-gray">Ngt.terapeuta@gmail.com</span>
-                </div>
+                  <span className="text-medium-gray hover:text-golden">Ngt.terapeuta@gmail.com</span>
+                </button>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-golden" />
                   <span className="text-medium-gray">Consulta en Pamplona</span>
@@ -73,19 +135,33 @@ const Contact = () => {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <form className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-sm font-medium text-dark-gray mb-2">
                       Nombre
                     </label>
-                    <Input placeholder="Tu nombre" className="border-medium-gray" />
+                    <Input 
+                      name="nombre"
+                      value={formData.nombre}
+                      onChange={handleInputChange}
+                      placeholder="Tu nombre" 
+                      className="border-medium-gray"
+                      required 
+                    />
                   </div>
                   <div>
                     <label className="block text-sm font-medium text-dark-gray mb-2">
                       Apellidos
                     </label>
-                    <Input placeholder="Tus apellidos" className="border-medium-gray" />
+                    <Input 
+                      name="apellidos"
+                      value={formData.apellidos}
+                      onChange={handleInputChange}
+                      placeholder="Tus apellidos" 
+                      className="border-medium-gray"
+                      required 
+                    />
                   </div>
                 </div>
                 
@@ -93,14 +169,30 @@ const Contact = () => {
                   <label className="block text-sm font-medium text-dark-gray mb-2">
                     Email
                   </label>
-                  <Input type="email" placeholder="tu@email.com" className="border-medium-gray" />
+                  <Input 
+                    name="email"
+                    type="email" 
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    placeholder="tu@email.com" 
+                    className="border-medium-gray"
+                    required 
+                  />
                 </div>
                 
                 <div>
                   <label className="block text-sm font-medium text-dark-gray mb-2">
                     Teléfono
                   </label>
-                  <Input type="tel" placeholder="+34 600 000 000" className="border-medium-gray" />
+                  <Input 
+                    name="telefono"
+                    type="tel" 
+                    value={formData.telefono}
+                    onChange={handleInputChange}
+                    placeholder="+34 600 000 000" 
+                    className="border-medium-gray"
+                    required 
+                  />
                 </div>
                 
                 <div>
@@ -108,6 +200,9 @@ const Contact = () => {
                     Cuéntame brevemente qué te trae aquí
                   </label>
                   <Textarea 
+                    name="mensaje"
+                    value={formData.mensaje}
+                    onChange={handleInputChange}
                     placeholder="Describe brevemente lo que te gustaría trabajar en terapia..."
                     className="border-medium-gray min-h-[120px]"
                   />
@@ -117,7 +212,8 @@ const Contact = () => {
                   type="submit" 
                   className="w-full bg-golden hover:bg-red-accent text-white py-3 text-lg rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Solicitar Cita
+                  <Mail className="mr-2 h-4 w-4" />
+                  Enviar por Correo
                 </Button>
               </form>
             </CardContent>
