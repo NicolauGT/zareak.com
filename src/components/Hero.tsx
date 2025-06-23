@@ -38,6 +38,16 @@ const Hero = () => {
     });
   };
 
+  const scrollToBenefits = () => {
+    const benefitsSection = document.getElementById('benefits-section');
+    if (benefitsSection) {
+      benefitsSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
       {/* Imagen de fondo sin transparencia */}
@@ -143,6 +153,7 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
+                onClick={scrollToBenefits}
                 className="border-golden text-golden hover:bg-light-beige px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Conoce Más

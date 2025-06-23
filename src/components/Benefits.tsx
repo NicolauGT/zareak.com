@@ -3,7 +3,7 @@ import { CheckCircle, User, Heart, Brain, Eye, Lightbulb, Star, ArrowRight } fro
 
 const Benefits = () => {
   return (
-    <section className="py-12 px-6 bg-white relative overflow-hidden">
+    <section id="benefits-section" className="py-12 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
       <div className="absolute top-20 right-10 w-40 h-40 bg-gradient-to-bl from-golden/55 to-red-accent/45 rounded-full blur-sm"></div>
       <div className="absolute bottom-0 left-0 w-56 h-56 bg-gradient-to-tr from-light-beige/70 to-golden/55 rounded-full blur-sm"></div>
