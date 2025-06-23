@@ -3,14 +3,14 @@ import { CheckCircle, User, Heart, Brain, Eye, Lightbulb, Star, ArrowRight } fro
 
 const Benefits = () => {
   return (
-    <section className="py-16 px-6 bg-white relative overflow-hidden">
+    <section className="py-12 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
       <div className="absolute top-20 right-10 w-40 h-40 bg-gradient-to-bl from-golden/55 to-red-accent/45 rounded-full blur-sm"></div>
       <div className="absolute bottom-0 left-0 w-56 h-56 bg-gradient-to-tr from-light-beige/70 to-golden/55 rounded-full blur-sm"></div>
       <div className="absolute top-1/3 left-20 w-28 h-28 bg-gradient-to-r from-red-accent/40 to-golden/60 rounded-full blur-sm"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h2 className="text-4xl font-bold text-gray-800 mb-6">
             Beneficios de la Terapia Gestalt
           </h2>
@@ -20,22 +20,22 @@ const Benefits = () => {
           </p>
         </div>
 
-        <div className="relative mx-auto w-[1200px] h-[500px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-10">
+        <div className="relative mx-auto w-[1200px] h-[400px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-8">
           
           {/* Imagen de terapia en el centro */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <div className="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-yellow-500 overflow-hidden">
+            <div className="w-48 h-48 bg-white rounded-full flex items-center justify-center shadow-xl border-4 border-yellow-500 overflow-hidden">
               <img 
                 src="/lovable-uploads/d00f9eb6-0b85-47c9-81bf-72184fb1f5b0.png" 
                 alt="Terapia Gestalt - Sesión de terapia"
-                className="w-36 h-36 object-cover rounded-full"
+                className="w-44 h-44 object-cover rounded-full"
               />
             </div>
           </div>
 
           {/* Fila superior */}
-          <div className="absolute top-16 left-1/2 transform -translate-x-1/2 flex space-x-24">
-            {/* Top Left */}
+          <div className="absolute top-8 left-1/2 transform -translate-x-1/2 flex space-x-32">
+            {/* Top Left - Liberación de patrones */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <ArrowRight className="w-5 h-5 text-red-500" />
@@ -45,7 +45,7 @@ const Benefits = () => {
               </div>
             </div>
 
-            {/* Top Center */}
+            {/* Top Center - Mayor autoconocimiento */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Eye className="w-5 h-5 text-red-500" />
@@ -55,7 +55,7 @@ const Benefits = () => {
               </div>
             </div>
 
-            {/* Top Right */}
+            {/* Top Right - Gestión emocional */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Heart className="w-5 h-5 text-red-500" />
@@ -66,8 +66,8 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Fila media - lados */}
-          <div className="absolute top-1/2 left-16 transform -translate-y-1/2">
+          {/* Fila media - lados más cerca del centro */}
+          <div className="absolute top-1/2 left-32 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <CheckCircle className="w-5 h-5 text-red-500" />
@@ -78,7 +78,7 @@ const Benefits = () => {
             </div>
           </div>
 
-          <div className="absolute top-1/2 right-16 transform -translate-y-1/2">
+          <div className="absolute top-1/2 right-32 transform -translate-y-1/2">
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <User className="w-5 h-5 text-red-500" />
@@ -89,9 +89,9 @@ const Benefits = () => {
             </div>
           </div>
 
-          {/* Fila inferior */}
-          <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-24">
-            {/* Bottom Left */}
+          {/* Fila inferior con más separación del centro */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-32">
+            {/* Bottom Left - Mejor comunicación */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Lightbulb className="w-5 h-5 text-red-500" />
@@ -101,7 +101,7 @@ const Benefits = () => {
               </div>
             </div>
 
-            {/* Bottom Center */}
+            {/* Bottom Center - Resolución de conflictos */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Brain className="w-5 h-5 text-red-500" />
@@ -111,7 +111,7 @@ const Benefits = () => {
               </div>
             </div>
 
-            {/* Bottom Right */}
+            {/* Bottom Right - Autoestima y confianza */}
             <div className="flex flex-col items-center w-32">
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Star className="w-5 h-5 text-red-500" />
