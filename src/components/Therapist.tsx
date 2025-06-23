@@ -14,6 +14,17 @@ const Therapist = () => {
 
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Fotografía */}
+            <div className="flex justify-center lg:justify-start">
+              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl">
+                <img 
+                  src="/lovable-uploads/cc29a32f-dd4d-47ae-bc6b-08e159b4961b.png" 
+                  alt="Nicolau Gómez - Terapeuta Gestalt"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
             {/* Contenido de texto */}
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-dark-gray">Nicolau Gómez</h3>
@@ -36,17 +47,6 @@ const Therapist = () => {
                   <h4 className="font-bold text-dark-gray">Especialidades</h4>
                   <p className="text-sm text-medium-gray">Sistémica<br />Teatro Terapéutico<br />Adolescencia</p>
                 </div>
-              </div>
-            </div>
-
-            {/* Fotografía */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="/lovable-uploads/cc29a32f-dd4d-47ae-bc6b-08e159b4961b.png" 
-                  alt="Nicolau Gómez - Terapeuta Gestalt"
-                  className="w-full h-full object-cover"
-                />
               </div>
             </div>
           </div>
