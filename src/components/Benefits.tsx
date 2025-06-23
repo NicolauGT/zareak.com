@@ -38,8 +38,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <ArrowRight className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Liberación de patrones</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Liberación de patrones</p>
               </div>
             </div>
 
@@ -48,8 +48,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Eye className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Mayor autoconocimiento</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Mayor autoconocimiento</p>
               </div>
             </div>
 
@@ -58,8 +58,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Heart className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Gestión emocional</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Gestión emocional</p>
               </div>
             </div>
           </div>
@@ -70,8 +70,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <CheckCircle className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Claridad en decisiones</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Claridad en decisiones</p>
               </div>
             </div>
           </div>
@@ -81,8 +81,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <User className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Relaciones auténticas</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Relaciones auténticas</p>
               </div>
             </div>
           </div>
@@ -94,8 +94,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Lightbulb className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Mejor comunicación</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Mejor comunicación</p>
               </div>
             </div>
 
@@ -104,8 +104,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Brain className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Resolución de conflictos</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Resolución de conflictos</p>
               </div>
             </div>
 
@@ -114,8 +114,8 @@ const Benefits = () => {
               <div className="w-12 h-12 bg-white border-3 border-yellow-500 rounded-full flex items-center justify-center shadow-lg mb-2">
                 <Star className="w-5 h-5 text-red-500" />
               </div>
-              <div className="bg-white border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
-                <p className="text-xs font-semibold text-gray-800 text-center">Autoestima y confianza</p>
+              <div className="bg-light-beige border-2 border-yellow-400/60 rounded-lg px-3 py-2 shadow-md">
+                <p className="text-xs font-semibold text-dark-gray text-center">Autoestima y confianza</p>
               </div>
             </div>
           </div>
