@@ -59,6 +59,7 @@
     --color-light-beige: #F4D6CC;
     --color-golden: #F4B860;
     --color-red-accent: #C83E4D;
+    --color-light-blue: #B5D3E7;
   }
 
   .dark {
@@ -117,16 +118,19 @@
   .text-light-beige { color: var(--color-light-beige); }
   .text-golden { color: var(--color-golden); }
   .text-red-accent { color: var(--color-red-accent); }
+  .text-light-blue { color: var(--color-light-blue); }
   
   .bg-dark-gray { background-color: var(--color-dark-gray); }
   .bg-medium-gray { background-color: var(--color-medium-gray); }
   .bg-light-beige { background-color: var(--color-light-beige); }
   .bg-golden { background-color: var(--color-golden); }
   .bg-red-accent { background-color: var(--color-red-accent); }
+  .bg-light-blue { background-color: var(--color-light-blue); }
   
   .border-dark-gray { border-color: var(--color-dark-gray); }
   .border-medium-gray { border-color: var(--color-medium-gray); }
   .border-light-beige { border-color: var(--color-light-beige); }
   .border-golden { border-color: var(--color-golden); }
   .border-red-accent { border-color: var(--color-red-accent); }
+  .border-light-blue { border-color: var(--color-light-blue); }
 }
