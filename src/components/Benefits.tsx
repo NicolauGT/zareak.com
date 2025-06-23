@@ -22,10 +22,14 @@ const Benefits = () => {
 
         <div className="relative mx-auto w-[600px] h-[600px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-12">
           
-          {/* Persona en el centro */}
+          {/* Imagen de terapia en el centro */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
-              <User className="w-10 h-10 text-gray-700" />
+            <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center shadow-lg border-4 border-yellow-500 overflow-hidden">
+              <img 
+                src="/lovable-uploads/d00f9eb6-0b85-47c9-81bf-72184fb1f5b0.png" 
+                alt="Terapia Gestalt - Sesión de terapia"
+                className="w-20 h-20 object-cover rounded-full"
+              />
             </div>
           </div>
 
