@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Calendar } from "lucide-react";
+import { Calendar, Mail } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -22,9 +22,32 @@ const Hero = () => {
     e.preventDefault();
     console.log("Datos de contacto:", formData);
     
+    // Crear el enlace mailto con los datos del formulario
+    const subject = encodeURIComponent("Solicitud de Cita - Terapia Gestalt");
+    const body = encodeURIComponent(
+      `Hola Nicolau,
+
+Me gustaría solicitar una cita para terapia individual.
+
+Mis datos de contacto son:
+
+Nombre: ${formData.nombre}
+Email: ${formData.email}
+Teléfono: ${formData.telefono}
+
+${formData.mensaje ? `Mensaje adicional: ${formData.mensaje}` : ''}
+
+Quedo a la espera de tu respuesta.
+
+Saludos cordiales.`
+    );
+    
+    const mailtoLink = `mailto:ngt.terapeuta@gmail.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, '_blank');
+    
     toast({
-      title: "Solicitud enviada",
-      description: "Nos pondremos en contacto contigo muy pronto.",
+      title: "Redirigiendo a tu cliente de correo",
+      description: "Se abrirá tu aplicación de correo con los datos completados.",
     });
     
     setOpen(false);
@@ -144,7 +167,8 @@ const Hero = () => {
                       />
                     </div>
                     <Button type="submit" className="w-full bg-golden hover:bg-red-accent">
-                      Enviar Solicitud
+                      <Mail className="mr-2 h-4 w-4" />
+                      Enviar por Correo
                     </Button>
                   </form>
                 </DialogContent>

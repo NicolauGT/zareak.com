@@ -1,5 +1,14 @@
 
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
+
 const Footer = () => {
+  const handleEmailClick = () => {
+    const subject = encodeURIComponent("Consulta - Terapia Gestalt Pamplona");
+    const body = encodeURIComponent("Hola Nicolau,\n\nMe gustaría obtener más información sobre tus servicios de terapia.\n\nSaludos cordiales.");
+    const mailtoLink = `mailto:ngt.terapeuta@gmail.com?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, '_blank');
+  };
+
   return (
     <footer className="bg-dark-gray text-white py-12 px-6">
       <div className="max-w-6xl mx-auto">
@@ -30,12 +39,29 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4 text-golden">
               Contacto
             </h4>
-            <div className="space-y-2 text-light-beige">
-              <p>Nicolau Gómez - Terapeuta Gestalt</p>
-              <p>Ngt.terapeuta@gmail.com</p>
-              <p>Consulta en Pamplona</p>
-              <p>Lunes - Viernes: 9:00 - 20:00</p>
-              <p>Sábados: 10:00 - 14:00</p>
+            <div className="space-y-3 text-light-beige">
+              <p className="font-medium">Nicolau Gómez - Terapeuta Gestalt</p>
+              
+              <button 
+                onClick={handleEmailClick}
+                className="flex items-center gap-2 hover:text-golden transition-colors cursor-pointer text-left"
+              >
+                <Mail className="h-4 w-4" />
+                Ngt.terapeuta@gmail.com
+              </button>
+              
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4" />
+                <span>Consulta en Pamplona</span>
+              </div>
+              
+              <div className="flex items-center gap-2">
+                <Clock className="h-4 w-4" />
+                <div>
+                  <p>Lunes - Viernes: 9:00 - 20:00</p>
+                  <p>Sábados: 10:00 - 14:00</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
