@@ -5,7 +5,7 @@ const Therapist = () => {
       <div className="absolute top-0 left-1/3 w-44 h-44 bg-gradient-to-br from-golden/60 to-red-accent/45 rounded-full blur-sm"></div>
       <div className="absolute bottom-10 right-10 w-32 h-32 bg-gradient-to-tl from-red-accent/50 to-light-beige/80 rounded-full blur-sm"></div>
       
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="max-w-6xl mx-auto relative z-10 bg-white/90 backdrop-blur-sm rounded-2xl p-12 shadow-lg">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark-gray mb-6">
         </h2>
