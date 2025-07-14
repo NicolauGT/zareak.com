@@ -53,12 +53,59 @@ const About = () => {
             </div>
           </div>
 
-          {/* Texto adicional y cita */}
-          <div className="max-w-3xl mx-auto space-y-8 text-center">
-            <p className="text-lg text-muted-foreground leading-relaxed">
+          {/* Texto adicional */}
+          <div className="text-center">
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto">
               La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones.
             </p>
-            
+          </div>
+
+          {/* Enfoque de la psicoterapia Gestalt Integrativa */}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/10 border border-border/50 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all duration-300">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                El trabajo con la psicoterapia Gestalt Integrativa que te proponemos se centra en el restablecimiento de tu equilibrio emocional y relacional con el objetivo de que puedas conseguir una vida más plena, mediante:
+              </p>
+              
+              <div className="grid md:grid-cols-2 gap-4">
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-muted-foreground">El reconocimiento y expresión de tus emociones.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-muted-foreground">El contacto con tus necesidades para poder satisfacerlas.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-muted-foreground">El aumento de tu autoestima y una mayor confianza en ti mismo/a.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-muted-foreground">El saneamiento de tus relaciones personales (pareja, familia, amistades, trabajo)</p>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-muted-foreground">La superación de duelos, heridas y sufrimientos.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-muted-foreground">El afrontamiento y el logro de tus objetivos.</p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                    <p className="text-muted-foreground">El conocimiento y desarrollo de tus propios recursos personales (cognitivos, emocionales y de acción).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Cita */}
+          <div className="max-w-3xl mx-auto text-center">
             <div className="relative p-8 bg-card border border-border/50 rounded-2xl shadow-sm">
               <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-primary to-secondary rounded-l-2xl"></div>
               <blockquote className="text-lg text-card-foreground font-medium leading-relaxed italic">
