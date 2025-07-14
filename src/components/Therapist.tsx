@@ -8,7 +8,8 @@ const Therapist = () => {
       <div className="max-w-6xl mx-auto relative z-10 bg-white/90 backdrop-blur-sm rounded-2xl p-12 shadow-lg">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-dark-gray mb-6">
-        </h2>
+            Sobre Mí
+          </h2>
           <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
         </div>
 
@@ -28,7 +29,7 @@ const Therapist = () => {
             {/* Contenido de texto */}
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-dark-gray">Nicolau Gómez</h3>
-              <h4 className="text-xl text-golden font-semibold">Sobre mi</h4>
+              
               
               <div className="space-y-4 text-medium-gray leading-relaxed">
                 <p>
