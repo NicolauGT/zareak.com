@@ -41,11 +41,11 @@ const Therapist = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                 <div className="bg-light-blue p-4 rounded-lg shadow-md border-l-4 border-golden">
                   <h4 className="font-bold text-dark-gray">Formación</h4>
-                  <p className="text-sm text-medium-gray">Terapia Gestalt<br />Psicología Integral</p>
+                  <p className="text-sm text-medium-gray">Terapia Gestalt<br />Sistémica<br />Teatro terapéutico<br />Psicología Integral</p>
                 </div>
                 <div className="bg-light-blue p-4 rounded-lg shadow-md border-l-4 border-golden">
                   <h4 className="font-bold text-dark-gray">Especialidades</h4>
-                  <p className="text-sm text-medium-gray">Sistémica<br />Teatro Terapéutico<br />Adolescencia</p>
+                  <p className="text-sm text-medium-gray">Adolescentes y Adultos</p>
                 </div>
               </div>
             </div>
