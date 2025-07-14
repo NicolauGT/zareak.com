@@ -24,12 +24,9 @@ const About = () => {
             </div>
             
             {/* Bocadillo con cita de Harari */}
-            <div className="relative bg-golden/10 p-6 rounded-2xl border border-golden/30 mt-6">
-              <div className="absolute -left-3 top-6 w-0 h-0 border-t-[12px] border-t-transparent border-b-[12px] border-b-transparent border-r-[12px] border-r-golden/10"></div>
-              <p className="text-dark-gray font-medium italic">
-                "Nuestra verdad es algo que hace que prestemos atención a una parte de la realidad, al mismo tiempo ignorando otras."
-              </p>
-              <p className="text-medium-gray text-sm mt-2 text-right">— Y. N. Harari</p>
+            <div className="bg-light-blue p-6 rounded-lg border-l-4 border-red-accent py-0">
+              <p className="text-dark-gray font-medium italic py-[20px] mx-0 my-0 px-[11px]">"Nuestra verdad es algo que hace que prestemos atención a una parte de la realidad, al mismo tiempo ignorando otras."</p>
+              <p className="text-medium-gray text-sm mt-2 text-right font-normal">— Y. N. Harari</p>
             </div>
           </div>
           
