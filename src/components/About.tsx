@@ -48,9 +48,7 @@ const About = () => {
 
           {/* Tercera sección: bocadillos centrados */}
           <div className="space-y-6 max-w-2xl mx-auto">
-            <div className="bg-light-beige p-6 border-l-4 border-golden py-0 bg-slate-50 rounded-none">
-              <p className="text-dark-gray font-medium italic py-[20px] mx-0 my-0 px-[11px]">"La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones."</p>
-            </div>
+            <p className="text-medium-gray leading-relaxed text-lg">La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones.</p>
             
             <div className="bg-light-blue p-6 rounded-lg border-l-4 border-red-accent py-0">
               <p className="text-dark-gray font-medium italic py-[20px] mx-0 my-0 px-[11px]">"Nuestra verdad es algo que hace que prestemos atención a una parte de la realidad, al mismo tiempo ignorando otras."</p>
