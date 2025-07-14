@@ -19,15 +19,12 @@ const About = () => {
               ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
             </p>
             <p className="text-lg text-medium-gray leading-relaxed">Como terapeuta gestalt, ofrezco un proceso de autoconocimiento profundo donde podrás integrar aspectos conflictivos de tu personalidad y encontrar un mayor equilibrio emocional y bienestar personal.</p>
-            <div className="bg-light-beige p-6 rounded-lg border-l-4 border-golden">
-              <p className="text-dark-gray font-medium italic">"La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones."</p>
+            <div className="bg-light-beige p-6 rounded-lg border-l-4 border-golden py-0">
+              <p className="text-dark-gray font-medium italic py-[20px] mx-0 my-0 px-[11px]">"La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones."</p>
             </div>
           </div>
           
-          <div className="relative">
-            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800" alt="Terapia Gestalt - Paisaje sereno representando la paz interior" className="rounded-lg shadow-xl w-full h-96 object-cover" />
-            <div className="absolute inset-0 bg-golden opacity-10 rounded-lg"></div>
-          </div>
+          
         </div>
       </div>
     </section>;
