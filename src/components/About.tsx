@@ -15,46 +15,55 @@ const About = () => {
           <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 items-center">
-          {/* Imagen pequeña a la izquierda */}
-          <div className="flex justify-center md:justify-start">
-            <div className="relative">
-              <img 
-                src={gestaltSmall} 
-                alt="Principios de psicología Gestalt" 
-                className="w-48 h-48 object-cover rounded-xl shadow-md"
-              />
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-light-blue/20 to-transparent"></div>
+        <div className="space-y-12">
+          {/* Primera sección: imagen izquierda + primer párrafo */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="flex justify-center md:justify-start">
+              <div className="relative">
+                <img 
+                  src={gestaltSmall} 
+                  alt="Principios de psicología Gestalt" 
+                  className="w-48 h-48 object-cover rounded-xl shadow-md"
+                />
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-light-blue/20 to-transparent"></div>
+              </div>
+            </div>
+            <div>
+              <p className="text-lg text-medium-gray leading-relaxed">
+                La terapia Gestalt es un enfoque humanístico que se centra en el <strong>aquí y ahora</strong>, 
+                ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
+              </p>
             </div>
           </div>
-          
-          {/* Contenido de texto */}
-          <div className="space-y-6 md:col-span-1">
-            <p className="text-lg text-medium-gray leading-relaxed">
-              La terapia Gestalt es un enfoque humanístico que se centra en el <strong>aquí y ahora</strong>, 
-              ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
-            </p>
-            <p className="text-lg text-medium-gray leading-relaxed">Como terapeuta gestalt, ofrezco un proceso de autoconocimiento profundo donde podrás integrar aspectos conflictivos de tu personalidad y encontrar un mayor equilibrio emocional y bienestar personal.</p>
+
+          {/* Segunda sección: segundo párrafo + imagen derecha */}
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="md:order-1">
+              <p className="text-lg text-medium-gray leading-relaxed">
+                Como terapeuta gestalt, ofrezco un proceso de autoconocimiento profundo donde podrás integrar aspectos conflictivos de tu personalidad y encontrar un mayor equilibrio emocional y bienestar personal.
+              </p>
+            </div>
+            <div className="flex justify-center md:justify-end md:order-2">
+              <div className="relative">
+                <img 
+                  src={gestaltImage} 
+                  alt="Psicología de la forma y principios Gestalt" 
+                  className="w-48 h-48 object-cover rounded-xl shadow-md"
+                />
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-golden/20 to-transparent"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Tercera sección: bocadillos centrados */}
+          <div className="space-y-6 max-w-2xl mx-auto">
             <div className="bg-light-beige p-6 rounded-lg border-l-4 border-golden py-0">
               <p className="text-dark-gray font-medium italic py-[20px] mx-0 my-0 px-[11px]">"La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones."</p>
             </div>
             
-            {/* Bocadillo con cita de Harari */}
             <div className="bg-light-blue p-6 rounded-lg border-l-4 border-red-accent py-0">
               <p className="text-dark-gray font-medium italic py-[20px] mx-0 my-0 px-[11px]">"Nuestra verdad es algo que hace que prestemos atención a una parte de la realidad, al mismo tiempo ignorando otras."</p>
               <p className="text-medium-gray text-sm mt-2 text-right font-normal">— Y. N. Harari</p>
-            </div>
-          </div>
-          
-          {/* Imagen grande a la derecha */}
-          <div className="flex justify-center md:justify-end">
-            <div className="relative">
-              <img 
-                src={gestaltImage} 
-                alt="Psicología de la forma y principios Gestalt" 
-                className="w-80 h-80 object-cover rounded-2xl shadow-lg"
-              />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-golden/20 to-transparent"></div>
             </div>
           </div>
         </div>
