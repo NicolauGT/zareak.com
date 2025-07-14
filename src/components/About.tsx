@@ -1,6 +1,5 @@
 import gestaltImage from "@/assets/gestalt-psychology.jpg";
 import gestaltSmall from "@/assets/gestalt-small.jpg";
-
 const About = () => {
   return <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
@@ -20,11 +19,7 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center md:justify-start">
               <div className="relative">
-                <img 
-                  src={gestaltSmall} 
-                  alt="Principios de psicología Gestalt" 
-                  className="w-48 h-48 object-cover rounded-xl shadow-md"
-                />
+                <img src={gestaltSmall} alt="Principios de psicología Gestalt" className="w-48 h-48 object-cover rounded-xl shadow-md" />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-light-blue/20 to-transparent"></div>
               </div>
             </div>
@@ -39,25 +34,21 @@ const About = () => {
           {/* Segunda sección: segundo párrafo + imagen derecha */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="md:order-1">
-              <p className="text-lg text-medium-gray leading-relaxed">
+              <p className="text-medium-gray leading-relaxed mx-[7px] text-lg">
                 Como terapeuta gestalt, ofrezco un proceso de autoconocimiento profundo donde podrás integrar aspectos conflictivos de tu personalidad y encontrar un mayor equilibrio emocional y bienestar personal.
               </p>
             </div>
-            <div className="flex justify-center md:justify-end md:order-2">
+            <div className="flex justify-center md:justify-end md:order-2 px-[44px] mx-[10px] my-0">
               <div className="relative">
-                <img 
-                  src={gestaltImage} 
-                  alt="Psicología de la forma y principios Gestalt" 
-                  className="w-48 h-48 object-cover rounded-xl shadow-md"
-                />
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-golden/20 to-transparent"></div>
+                <img src={gestaltImage} alt="Psicología de la forma y principios Gestalt" className="w-48 h-48 object-cover rounded-xl shadow-md" />
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-golden/20 to-transparent my-0 py-0"></div>
               </div>
             </div>
           </div>
 
           {/* Tercera sección: bocadillos centrados */}
           <div className="space-y-6 max-w-2xl mx-auto">
-            <div className="bg-light-beige p-6 rounded-lg border-l-4 border-golden py-0">
+            <div className="bg-light-beige p-6 border-l-4 border-golden py-0 bg-slate-50 rounded-none">
               <p className="text-dark-gray font-medium italic py-[20px] mx-0 my-0 px-[11px]">"La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones."</p>
             </div>
             
