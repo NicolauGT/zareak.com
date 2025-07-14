@@ -1,4 +1,3 @@
-
 const About = () => {
   return <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
@@ -19,11 +18,7 @@ const About = () => {
               La terapia Gestalt es un enfoque humanístico que se centra en el <strong>aquí y ahora</strong>, 
               ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
             </p>
-            <p className="text-lg text-medium-gray leading-relaxed">
-              Como terapeuta gestalt, ofrezco un proceso de autoconocimiento profundo 
-              donde podrás integrar aspectos fragmentados de tu personalidad y encontrar un mayor 
-              equilibrio emocional y bienestar personal.
-            </p>
+            <p className="text-lg text-medium-gray leading-relaxed">Como terapeuta gestalt, ofrezco un proceso de autoconocimiento profundo donde podrás integrar aspectos conflictivos de tu personalidad y encontrar un mayor equilibrio emocional y bienestar personal.</p>
             <div className="bg-light-beige p-6 rounded-lg border-l-4 border-golden">
               <p className="text-dark-gray font-medium italic">"La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones."</p>
             </div>
