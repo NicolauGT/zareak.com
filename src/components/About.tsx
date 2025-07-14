@@ -1,3 +1,5 @@
+import gestaltImage from "@/assets/gestalt-psychology.jpg";
+
 const About = () => {
   return <section className="py-20 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
@@ -29,8 +31,16 @@ const About = () => {
               <p className="text-medium-gray text-sm mt-2 text-right font-normal">— Y. N. Harari</p>
             </div>
           </div>
-          
-          
+          <div className="flex justify-center">
+            <div className="relative">
+              <img 
+                src={gestaltImage} 
+                alt="Psicología de la forma y principios Gestalt" 
+                className="w-80 h-80 object-cover rounded-2xl shadow-lg"
+              />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-golden/20 to-transparent"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>;
