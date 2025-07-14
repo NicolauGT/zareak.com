@@ -1,4 +1,5 @@
 import gestaltImage from "@/assets/gestalt-psychology.jpg";
+import gestaltSmall from "@/assets/gestalt-small.jpg";
 
 const About = () => {
   return <section className="py-20 px-6 bg-white relative overflow-hidden">
@@ -14,8 +15,21 @@ const About = () => {
           <div className="w-24 h-1 bg-golden mx-auto mb-8"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+        <div className="grid md:grid-cols-3 gap-8 items-center">
+          {/* Imagen pequeña a la izquierda */}
+          <div className="flex justify-center md:justify-start">
+            <div className="relative">
+              <img 
+                src={gestaltSmall} 
+                alt="Principios de psicología Gestalt" 
+                className="w-48 h-48 object-cover rounded-xl shadow-md"
+              />
+              <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-light-blue/20 to-transparent"></div>
+            </div>
+          </div>
+          
+          {/* Contenido de texto */}
+          <div className="space-y-6 md:col-span-1">
             <p className="text-lg text-medium-gray leading-relaxed">
               La terapia Gestalt es un enfoque humanístico que se centra en el <strong>aquí y ahora</strong>, 
               ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
@@ -31,7 +45,9 @@ const About = () => {
               <p className="text-medium-gray text-sm mt-2 text-right font-normal">— Y. N. Harari</p>
             </div>
           </div>
-          <div className="flex justify-center">
+          
+          {/* Imagen grande a la derecha */}
+          <div className="flex justify-center md:justify-end">
             <div className="relative">
               <img 
                 src={gestaltImage} 
