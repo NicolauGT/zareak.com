@@ -102,9 +102,9 @@ Saludos cordiales.`
           <div className="absolute inset-0 bg-white/40 rounded-3xl"></div>
           
           <div className="relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-dark-gray mb-6 leading-tight" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Terapia Individual
-              <span className="block text-white">Pamplona</span>
+              <span className="block text-golden">Pamplona</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold text-dark-gray mb-4">
               Terapia Gestalt con Nicolau Gómez
