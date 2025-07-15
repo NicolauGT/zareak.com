@@ -78,7 +78,7 @@ Saludos cordiales.`
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000')`,
-          filter: 'saturate(0.85) brightness(1.05)',
+          filter: 'saturate(0.85) brightness(1.05) blur(1.5px)',
         }}
       />
       
