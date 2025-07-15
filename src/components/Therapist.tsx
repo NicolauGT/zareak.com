@@ -19,9 +19,9 @@ const Therapist = () => {
             <div className="flex justify-center lg:justify-start">
               <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl">
                 <img 
-                  src="/lovable-uploads/cc29a32f-dd4d-47ae-bc6b-08e159b4961b.png" 
+                  src="/lovable-uploads/59c04eb0-1b2c-4ca7-8082-906666cf7927.png" 
                   alt="Nicolau Gómez - Terapeuta Gestalt"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
