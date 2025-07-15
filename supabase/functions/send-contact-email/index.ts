@@ -31,6 +31,7 @@ const handler = async (req: Request): Promise<Response> => {
     const emailResponse = await resend.emails.send({
       from: "Terapia Gestalt <onboarding@resend.dev>",
       to: ["ngt.terapeuta@gmail.com"],
+      reply_to: email, // Permite responder directamente al cliente
       subject: "Nueva Solicitud de Cita - Terapia Gestalt",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
