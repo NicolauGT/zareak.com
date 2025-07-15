@@ -78,15 +78,15 @@ Saludos cordiales.`
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000')`,
-          filter: 'contrast(0.7) saturate(0.8) brightness(0.9)',
+          filter: 'saturate(0.85) brightness(1.05)',
         }}
       />
       
-      {/* Overlay granulado */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/5" 
+      {/* Overlay granulado muy sutil */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/3" 
            style={{
-             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0)`,
-             backgroundSize: '20px 20px'
+             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0)`,
+             backgroundSize: '25px 25px'
            }}
       />
       
