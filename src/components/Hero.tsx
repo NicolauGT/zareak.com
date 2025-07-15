@@ -104,12 +104,13 @@ Saludos cordiales.`
               Descubre tu potencial interior y encuentra el equilibrio emocional que buscas. 
               Un espacio seguro para tu crecimiento personal y bienestar.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Dialog open={open} onOpenChange={setOpen}>
                 <DialogTrigger asChild>
                   <Button 
+                    variant="outline" 
                     size="lg" 
-                    className="bg-golden hover:bg-red-accent text-white px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="border-golden text-golden hover:bg-light-beige px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     <Calendar className="mr-2 h-5 w-5" />
                     Reservar Cita
@@ -173,15 +174,6 @@ Saludos cordiales.`
                   </form>
                 </DialogContent>
               </Dialog>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                onClick={scrollToBenefits}
-                className="border-golden text-golden hover:bg-light-beige px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Conoce Más
-              </Button>
             </div>
           </div>
         </div>
