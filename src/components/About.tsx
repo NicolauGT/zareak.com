@@ -23,18 +23,18 @@ const About = () => {
         
         <div className="space-y-16">
           {/* Primera sección */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center md:justify-start">
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+            <div className="flex justify-center">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-golden to-red-accent rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                 <img 
                   src={gestaltSmall} 
                   alt="Principios de psicología Gestalt" 
-                  className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" 
+                  className="relative w-72 h-72 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" 
                 />
               </div>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 text-center md:text-left">
               <p className="text-lg text-dark-gray leading-relaxed">
                 La terapia Gestalt es un enfoque humanístico que se centra en el <span className="font-semibold text-golden">aquí y ahora</span>, 
                 ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
@@ -55,18 +55,18 @@ const About = () => {
           </div>
 
           {/* Segunda sección con imagen */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="md:order-2">
+          <div className="grid md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
+            <div className="md:order-2 flex justify-center">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-light-blue to-golden rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                 <img 
                   src={gestaltImage} 
                   alt="Psicología de la forma y principios Gestalt" 
-                  className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300 mx-auto" 
+                  className="relative w-72 h-72 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" 
                 />
               </div>
             </div>
-            <div className="md:order-1">
+            <div className="md:order-1 text-center md:text-left">
               <h3 className="text-2xl font-bold text-dark-gray mb-6">Psicoterapia Gestalt Integrativa</h3>
               <p className="text-lg text-dark-gray leading-relaxed mb-6">
                 El trabajo con la psicoterapia Gestalt Integrativa que te proponemos se centra en el restablecimiento de tu equilibrio emocional y relacional con el objetivo de que puedas conseguir una vida más plena, mediante:
