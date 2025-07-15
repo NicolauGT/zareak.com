@@ -82,11 +82,11 @@ Saludos cordiales.`
         }}
       />
       
-      {/* Overlay granulado muy sutil */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-black/3" 
+      {/* Overlay granulado más pronunciado */}
+      <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-black/6" 
            style={{
-             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.08) 1px, transparent 0)`,
-             backgroundSize: '25px 25px'
+             backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255,255,255,0.2) 1px, transparent 0)`,
+             backgroundSize: '15px 15px'
            }}
       />
       
