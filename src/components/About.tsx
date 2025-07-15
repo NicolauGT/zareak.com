@@ -75,33 +75,33 @@ const About = () => {
               {/* Lista de beneficios en dos columnas */}
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-golden bg-golden/5">
                     <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-medium-gray">El reconocimiento y expresión de tus emociones.</p>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-red-accent bg-red-accent/5">
                     <div className="w-2 h-2 bg-red-accent rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-medium-gray">El contacto con tus necesidades para poder satisfacerlas.</p>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-light-blue bg-light-blue/5">
                     <div className="w-2 h-2 bg-light-blue rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-medium-gray">El aumento de tu autoestima y una mayor confianza en ti mismo/a.</p>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-golden bg-golden/5">
                     <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-medium-gray">El saneamiento de tus relaciones personales (pareja, familia, amistades, trabajo).</p>
                   </div>
                 </div>
                 <div className="space-y-3">
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-red-accent bg-red-accent/5">
                     <div className="w-2 h-2 bg-red-accent rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-medium-gray">La superación de duelos, heridas y sufrimientos.</p>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-light-blue bg-light-blue/5">
                     <div className="w-2 h-2 bg-light-blue rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-medium-gray">El afrontamiento y el logro de tus objetivos.</p>
                   </div>
-                  <div className="flex items-start space-x-3">
+                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-golden bg-golden/5">
                     <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
                     <p className="text-medium-gray">El conocimiento y desarrollo de tus propios recursos personales (cognitivos, emocionales y de acción).</p>
                   </div>
