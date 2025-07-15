@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { Calendar, Mail } from "lucide-react";
+import { Calendar, Mail, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
@@ -10,6 +10,7 @@ import { useToast } from "@/hooks/use-toast";
 
 const Hero = () => {
   const [open, setOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     nombre: "",
     email: "",
@@ -18,40 +19,43 @@ const Hero = () => {
   });
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Datos de contacto:", formData);
+    setIsSubmitting(true);
+    console.log("Enviando datos de contacto:", formData);
     
-    // Crear el enlace mailto con los datos del formulario
-    const subject = encodeURIComponent("Solicitud de Cita - Terapia Gestalt");
-    const body = encodeURIComponent(
-      `Hola Nicolau,
+    try {
+      const response = await fetch('https://qvuaweuwotjckowukxlp.supabase.co/functions/v1/send-contact-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-Me gustaría solicitar una cita para terapia individual.
+      const result = await response.json();
 
-Mis datos de contacto son:
-
-Nombre: ${formData.nombre}
-Email: ${formData.email}
-Teléfono: ${formData.telefono}
-
-${formData.mensaje ? `Mensaje adicional: ${formData.mensaje}` : ''}
-
-Quedo a la espera de tu respuesta.
-
-Saludos cordiales.`
-    );
-    
-    const mailtoLink = `mailto:ngt.terapeuta@gmail.com?subject=${subject}&body=${body}`;
-    window.open(mailtoLink, '_blank');
-    
-    toast({
-      title: "Redirigiendo a tu cliente de correo",
-      description: "Se abrirá tu aplicación de correo con los datos completados.",
-    });
-    
-    setOpen(false);
-    setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
+      if (result.success) {
+        toast({
+          title: "¡Email enviado correctamente!",
+          description: "Nicolau recibirá tu solicitud y te contactará pronto.",
+        });
+        
+        setOpen(false);
+        setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
+      } else {
+        throw new Error(result.error || 'Error desconocido');
+      }
+    } catch (error) {
+      console.error("Error al enviar email:", error);
+      toast({
+        title: "Error al enviar el email",
+        description: "Por favor, inténtalo de nuevo más tarde.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -171,9 +175,13 @@ Saludos cordiales.`
                         rows={3}
                       />
                     </div>
-                    <Button type="submit" className="w-full bg-golden hover:bg-red-accent">
-                      <Mail className="mr-2 h-4 w-4" />
-                      Enviar por Correo
+                    <Button type="submit" className="w-full bg-golden hover:bg-red-accent" disabled={isSubmitting}>
+                      {isSubmitting ? (
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      ) : (
+                        <Mail className="mr-2 h-4 w-4" />
+                      )}
+                      {isSubmitting ? "Enviando..." : "Enviar Solicitud"}
                     </Button>
                   </form>
                 </DialogContent>
