@@ -102,7 +102,7 @@ Saludos cordiales.`
           <div className="absolute inset-0 bg-white/40 rounded-3xl"></div>
           
           <div className="relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-dark-gray mb-6 leading-tight">
+            <h1 className="text-5xl md:text-6xl font-bold text-dark-gray mb-6 leading-tight" style={{ textShadow: '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000' }}>
               Terapia Individual
               <span className="block text-white">Pamplona</span>
             </h1>
