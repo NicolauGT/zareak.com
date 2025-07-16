@@ -28,6 +28,7 @@ const About = () => {
                 </div>
               </div>
               <div className="space-y-6 max-w-md mx-auto md:mx-0">
+                <h3 className="text-xl font-semibold text-dark-gray mb-4">¿Qué es la Gestalt?</h3>
                 <p className="text-lg text-dark-gray leading-relaxed">
                   La terapia Gestalt es un enfoque humanístico que se centra en el <span className="font-semibold text-golden">aquí y ahora</span>, 
                   ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
