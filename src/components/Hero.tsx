@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Mail, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import zareakLogo from "@/assets/zareak-logo.png";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -101,6 +102,15 @@ const Hero = () => {
           <div className="absolute inset-0 bg-white/40 rounded-3xl"></div>
           
           <div className="relative z-10">
+            {/* Logotipo ZAREAK */}
+            <div className="mb-8">
+              <img 
+                src={zareakLogo} 
+                alt="ZAREAK - Terapia Gestalt" 
+                className="w-48 h-32 mx-auto object-contain"
+              />
+            </div>
+            
             <h1 className="text-5xl md:text-6xl font-bold text-dark-gray mb-6 leading-tight">
               Terapia Individual
               <span className="block text-red-accent">Pamplona</span>
