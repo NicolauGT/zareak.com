@@ -10,9 +10,7 @@ const About = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-dark-gray mb-4">
-            ¿Qué es la Terapia Gestalt?
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-dark-gray mb-4">¿Qué es la Terapia?</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-golden to-red-accent mx-auto mb-6"></div>
           <p className="text-lg text-medium-gray max-w-3xl mx-auto leading-relaxed">
             La terapia individual te invita a ser protagonista de tu propia transformación, desarrollando una mayor conciencia de ti mismo y de tus relaciones.
