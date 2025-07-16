@@ -1,9 +1,6 @@
-
 import { CheckCircle, User, Heart, Brain, Eye, Lightbulb, Star, ArrowRight } from "lucide-react";
-
 const Benefits = () => {
-  return (
-    <section id="benefits-section" className="py-12 px-6 bg-white relative overflow-hidden">
+  return <section id="benefits-section" className="py-12 px-6 bg-white relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
       <div className="absolute top-20 right-10 w-40 h-40 bg-gradient-to-bl from-golden/55 to-red-accent/45 rounded-full blur-sm"></div>
       <div className="absolute bottom-0 left-0 w-56 h-56 bg-gradient-to-tr from-light-beige/70 to-golden/55 rounded-full blur-sm"></div>
@@ -11,9 +8,7 @@ const Benefits = () => {
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-8">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6">
-            Beneficios de la Terapia Gestalt
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">Beneficios de la Terapia </h2>
           <div className="w-24 h-1 bg-yellow-500 mx-auto mb-8"></div>
           <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
             Un viaje transformador hacia tu bienestar emocional y crecimiento personal.
@@ -24,11 +19,7 @@ const Benefits = () => {
           
           {/* Imagen de terapia como fondo */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <img 
-              src="/lovable-uploads/d00f9eb6-0b85-47c9-81bf-72184fb1f5b0.png" 
-              alt="Terapia Gestalt - Sesión de terapia"
-              className="w-80 h-80 object-cover rounded-full opacity-20"
-            />
+            <img src="/lovable-uploads/d00f9eb6-0b85-47c9-81bf-72184fb1f5b0.png" alt="Terapia Gestalt - Sesión de terapia" className="w-80 h-80 object-cover rounded-full opacity-20" />
           </div>
 
           {/* Fila superior */}
@@ -130,8 +121,6 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Benefits;
