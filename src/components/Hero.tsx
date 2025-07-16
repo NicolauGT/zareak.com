@@ -77,7 +77,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20">
+    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 pt-32">
       {/* Logotipo ZAREAK en esquina superior izquierda */}
       <div className="absolute top-6 left-6 z-20">
         <img 
