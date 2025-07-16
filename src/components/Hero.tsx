@@ -78,15 +78,6 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20 pt-32">
-      {/* Logotipo ZAREAK en esquina superior izquierda */}
-      <div className="absolute top-6 left-6 z-20">
-        <img 
-          src={zareakLogo} 
-          alt="ZAREAK - Terapia Gestalt" 
-          className="w-40 h-40 object-contain"
-        />
-      </div>
-
       {/* Imagen de fondo sin transparencia */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
