@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Calendar, Mail, Loader2 } from "lucide-react";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
-import zareakLogo from "@/assets/zareak-logo.png";
+import zareakLogo from "@/assets/zareak-logo-soft.png";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -83,7 +83,7 @@ const Hero = () => {
         <img 
           src={zareakLogo} 
           alt="ZAREAK - Terapia Gestalt" 
-          className="w-20 h-20 object-contain"
+          className="w-40 h-40 object-contain"
         />
       </div>
 
