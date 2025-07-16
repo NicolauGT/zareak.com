@@ -22,7 +22,7 @@ const About = () => {
         <div className="space-y-16">
           {/* Primera sección */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-golden to-red-accent rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                 <img src={gestaltSmall} alt="Principios de psicología Gestalt" className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
@@ -50,10 +50,10 @@ const About = () => {
 
           {/* Segunda sección con imagen */}
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="md:order-2">
+            <div className="md:order-2 flex justify-center">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-light-blue to-golden rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-                <img src={gestaltImage} alt="Psicología de la forma y principios Gestalt" className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300 mx-auto" />
+                <img src={gestaltImage} alt="Psicología de la forma y principios Gestalt" className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
             <div className="md:order-1">
