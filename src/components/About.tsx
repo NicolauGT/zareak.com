@@ -21,7 +21,7 @@ const About = () => {
         
         <div className="space-y-16">
           {/* Primera sección */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-golden to-red-accent rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
@@ -49,7 +49,7 @@ const About = () => {
           </div>
 
           {/* Segunda sección con imagen */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="md:order-2 flex justify-center">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-light-blue to-golden rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
