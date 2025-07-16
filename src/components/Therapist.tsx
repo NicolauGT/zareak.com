@@ -1,4 +1,3 @@
-
 const Therapist = () => {
   return <section className="py-20 px-6 bg-light-beige relative overflow-hidden">
       {/* Elementos decorativos de fondo más visibles */}
@@ -18,11 +17,7 @@ const Therapist = () => {
             {/* Fotografía */}
             <div className="flex justify-center lg:justify-start">
               <div className="w-80 h-80 rounded-2xl overflow-hidden shadow-xl">
-                <img 
-                  src="/lovable-uploads/59c04eb0-1b2c-4ca7-8082-906666cf7927.png" 
-                  alt="Nicolau Gómez - Terapeuta Gestalt"
-                  className="w-full h-full object-cover object-top"
-                />
+                <img src="/lovable-uploads/59c04eb0-1b2c-4ca7-8082-906666cf7927.png" alt="Nicolau Gómez - Terapeuta Gestalt" className="w-full h-full object-cover object-top" />
               </div>
             </div>
 
@@ -32,11 +27,7 @@ const Therapist = () => {
               
               
               <div className="space-y-4 text-medium-gray leading-relaxed">
-                <p>
-                  Como terapeuta gestalt, creo firmemente en la capacidad innata de cada persona para crecer 
-                  y sanar. Mi rol es acompañarte en este proceso de autodescubrimiento 
-                  desde un espacio de respeto, empatía y profesionalidad.
-                </p>
+                <p>Como terapeuta, creo firmemente en la capacidad innata de cada persona para crecer y sanar. Mi rol es acompañarte en este proceso de autodescubrimiento desde un espacio de respeto, empatía y profesionalidad.</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
