@@ -28,7 +28,7 @@ const About = () => {
                 <img src={gestaltSmall} alt="Principios de psicología Gestalt" className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
-            <div className="space-y-6 text-center">
+            <div className="space-y-6 text-center max-w-md mx-auto">
               <p className="text-lg text-dark-gray leading-relaxed">
                 La terapia Gestalt es un enfoque humanístico que se centra en el <span className="font-semibold text-golden">aquí y ahora</span>, 
                 ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
