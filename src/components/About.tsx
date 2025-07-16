@@ -19,16 +19,17 @@ const About = () => {
           </p>
         </div>
         
-        <div className="space-y-16">
-          {/* Primera sección */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="flex justify-center">
+        {/* Contenedor principal con máximo ancho más conservador */}
+        <div className="max-w-5xl mx-auto space-y-20">
+          {/* Primera sección - Texto e imagen centrados */}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center md:justify-end">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-golden to-red-accent rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-                <img src={gestaltSmall} alt="Principios de psicología Gestalt" className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
+                <img src={gestaltSmall} alt="Principios de psicología Gestalt" className="relative w-72 h-72 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
-            <div className="space-y-6 max-w-lg mx-auto">
+            <div className="space-y-6 max-w-md">
               <p className="text-lg text-dark-gray leading-relaxed">
                 La terapia Gestalt es un enfoque humanístico que se centra en el <span className="font-semibold text-golden">aquí y ahora</span>, 
                 ayudándote a tomar conciencia de tus pensamientos, emociones y comportamientos en el momento presente.
@@ -39,8 +40,8 @@ const About = () => {
             </div>
           </div>
 
-          {/* Cita destacada */}
-          <div className="max-w-4xl mx-auto">
+          {/* Cita destacada - más centrada */}
+          <div className="max-w-3xl mx-auto px-4">
             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-golden/20">
               <blockquote className="text-xl text-dark-gray text-center italic leading-relaxed">
                 "Nuestra verdad es algo que hace que prestemos atención a una parte de la realidad, al mismo tiempo ignorando otras."
@@ -48,51 +49,47 @@ const About = () => {
             </div>
           </div>
 
-          {/* Segunda sección con imagen */}
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="md:order-2 flex justify-center">
+          {/* Segunda sección - Imagen y contenido mejor distribuido */}
+          <div className="grid md:grid-cols-2 gap-12 items-start">
+            <div className="md:order-2 flex justify-center md:justify-start">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-light-blue to-golden rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-                <img src={gestaltImage} alt="Psicología de la forma y principios Gestalt" className="relative w-64 h-64 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
+                <img src={gestaltImage} alt="Psicología de la forma y principios Gestalt" className="relative w-72 h-72 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
-            <div className="md:order-1 max-w-4xl mx-auto">
+            <div className="md:order-1 max-w-lg">
               <h3 className="text-2xl font-bold text-dark-gray mb-6">Psicoterapia Gestalt Integrativa</h3>
-              <p className="text-lg text-dark-gray leading-relaxed mb-6">El trabajo con la psicoterapia Gestalt Integrativa se centra en el restablecimiento de tu equilibrio emocional y relacional con el objetivo de que puedas conseguir una vida más plena, mediante:</p>
+              <p className="text-lg text-dark-gray leading-relaxed mb-8">El trabajo con la psicoterapia Gestalt Integrativa se centra en el restablecimiento de tu equilibrio emocional y relacional con el objetivo de que puedas conseguir una vida más plena, mediante:</p>
               
-              {/* Lista de beneficios en dos columnas */}
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-golden bg-golden/5">
-                    <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-medium-gray">El reconocimiento y expresión de tus emociones.</p>
-                  </div>
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-red-accent bg-red-accent/5">
-                    <div className="w-2 h-2 bg-red-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-medium-gray">El contacto con tus necesidades para poder satisfacerlas.</p>
-                  </div>
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-light-blue bg-light-blue/5">
-                    <div className="w-2 h-2 bg-light-blue rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-medium-gray">El aumento de tu autoestima y una mayor confianza en ti mismo/a.</p>
-                  </div>
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-golden bg-golden/5">
-                    <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-medium-gray">El saneamiento de tus relaciones personales (pareja, familia, amistades, trabajo).</p>
-                  </div>
+              {/* Lista de beneficios reorganizada */}
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3 p-4 rounded-lg border-l-4 border-golden bg-golden/5">
+                  <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-medium-gray">El reconocimiento y expresión de tus emociones.</p>
                 </div>
-                <div className="space-y-3">
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-red-accent bg-red-accent/5">
-                    <div className="w-2 h-2 bg-red-accent rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-medium-gray">La superación de duelos, heridas y sufrimientos.</p>
-                  </div>
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-light-blue bg-light-blue/5">
-                    <div className="w-2 h-2 bg-light-blue rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-medium-gray">El afrontamiento y el logro de tus objetivos.</p>
-                  </div>
-                  <div className="flex items-start space-x-3 p-3 rounded-lg border-l-4 border-golden bg-golden/5">
-                    <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-medium-gray">El conocimiento y desarrollo de tus propios recursos personales (cognitivos, emocionales y de acción).</p>
-                  </div>
+                <div className="flex items-start space-x-3 p-4 rounded-lg border-l-4 border-red-accent bg-red-accent/5">
+                  <div className="w-2 h-2 bg-red-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-medium-gray">El contacto con tus necesidades para poder satisfacerlas.</p>
+                </div>
+                <div className="flex items-start space-x-3 p-4 rounded-lg border-l-4 border-light-blue bg-light-blue/5">
+                  <div className="w-2 h-2 bg-light-blue rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-medium-gray">El aumento de tu autoestima y una mayor confianza en ti mismo/a.</p>
+                </div>
+                <div className="flex items-start space-x-3 p-4 rounded-lg border-l-4 border-golden bg-golden/5">
+                  <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-medium-gray">El saneamiento de tus relaciones personales (pareja, familia, amistades, trabajo).</p>
+                </div>
+                <div className="flex items-start space-x-3 p-4 rounded-lg border-l-4 border-red-accent bg-red-accent/5">
+                  <div className="w-2 h-2 bg-red-accent rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-medium-gray">La superación de duelos, heridas y sufrimientos.</p>
+                </div>
+                <div className="flex items-start space-x-3 p-4 rounded-lg border-l-4 border-light-blue bg-light-blue/5">
+                  <div className="w-2 h-2 bg-light-blue rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-medium-gray">El afrontamiento y el logro de tus objetivos.</p>
+                </div>
+                <div className="flex items-start space-x-3 p-4 rounded-lg border-l-4 border-golden bg-golden/5">
+                  <div className="w-2 h-2 bg-golden rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-medium-gray">El conocimiento y desarrollo de tus propios recursos personales (cognitivos, emocionales y de acción).</p>
                 </div>
               </div>
             </div>
