@@ -57,7 +57,7 @@ const About = () => {
                 <img src={gestaltImage} alt="Psicología de la forma y principios Gestalt" className="relative w-72 h-72 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
               </div>
             </div>
-            <div className="md:order-1 max-w-lg">
+            <div className="md:order-1 max-w-lg mx-auto">
               <h3 className="text-2xl font-bold text-dark-gray mb-6">Psicoterapia Gestalt Integrativa</h3>
               <p className="text-lg text-dark-gray leading-relaxed mb-8">El trabajo con la psicoterapia Gestalt Integrativa se centra en el restablecimiento de tu equilibrio emocional y relacional con el objetivo de que puedas conseguir una vida más plena, mediante:</p>
               
