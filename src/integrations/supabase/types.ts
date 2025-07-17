@@ -14,7 +14,27 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      Mensajes: {
+        Row: {
+          Email: string
+          Fecha: string | null
+          id: string
+          Mensjaje: string | null
+        }
+        Insert: {
+          Email: string
+          Fecha?: string | null
+          id: string
+          Mensjaje?: string | null
+        }
+        Update: {
+          Email?: string
+          Fecha?: string | null
+          id?: string
+          Mensjaje?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
