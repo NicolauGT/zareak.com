@@ -60,7 +60,7 @@ const Navbar = () => {
               onClick={() => scrollToSection("#hero")}
               className="text-2xl font-bold text-golden hover:text-red-accent transition-colors"
             >
-              ZAREAK
+              <span className="inline-block transform scale-x-[-1]">Z</span>
             </button>
           </div>
 
