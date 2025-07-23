@@ -42,11 +42,7 @@ const About = () => {
 
           {/* Cita destacada */}
           <div className="max-w-4xl mx-auto">
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-golden/20">
-              <blockquote className="text-xl text-dark-gray text-center italic leading-relaxed">
-                "Nuestra verdad es algo que hace que prestemos atención a una parte de la realidad, al mismo tiempo ignorando otras."
-              </blockquote>
-            </div>
+            
           </div>
 
           {/* Segunda sección - Texto izquierda, imagen derecha */}
