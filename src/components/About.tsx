@@ -24,7 +24,7 @@ const About = () => {
               <div className="flex justify-center">
                 <div className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-r from-golden to-red-accent rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-                  <img src={gestaltSmall} alt="Principios de psicología Gestalt" className="relative w-80 h-80 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
+                  <img src={gestaltSmall} alt="Psicólogo en Pamplona especialista en terapia Gestalt" className="relative w-80 h-80 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
                 </div>
               </div>
               <div className="space-y-6 max-w-md mx-auto md:mx-0">
@@ -83,7 +83,7 @@ const About = () => {
               <div className="flex justify-center">
                 <div className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-r from-light-blue to-golden rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
-                  <img src={gestaltImage} alt="Psicología de la forma y principios Gestalt" className="relative w-80 h-80 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
+                  <img src={gestaltImage} alt="Psicólogo en Pamplona terapia integrativa" className="relative w-80 h-80 object-cover rounded-xl shadow-xl group-hover:scale-105 transition-transform duration-300" />
                 </div>
               </div>
             </div>
