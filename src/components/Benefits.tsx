@@ -15,7 +15,8 @@ const Benefits = () => {
           </p>
         </div>
 
-        <div className="relative mx-auto w-[1200px] h-[350px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-hidden mb-8">
+        <div className="overflow-x-auto overflow-y-visible pb-4 mb-8 -mx-6 px-6 md:mx-0 md:px-0">
+          <div className="relative mx-auto w-[1200px] min-w-[1200px] h-[350px] bg-gradient-to-br from-orange-50 to-yellow-50 rounded-3xl overflow-visible">
           
           {/* Imagen de terapia como fondo */}
           <div className="absolute inset-0 flex items-center justify-center">
@@ -111,6 +112,7 @@ const Benefits = () => {
             </div>
           </div>
 
+          </div>
         </div>
 
         {/* Resultado final */}
