@@ -23,7 +23,7 @@ const Therapist = () => {
 
             {/* Contenido de texto */}
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-dark-gray">Nicolau Gómez</h3>
+              <h3 className="text-3xl font-bold text-dark-gray">Nicolau Gómez Torrent</h3>
               
               
               <div className="space-y-4 text-medium-gray leading-relaxed">
