@@ -77,7 +77,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 py-20 pt-32">
+    <section className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center px-4 md:px-6 py-12 md:py-20 pt-24 md:pt-32">
       {/* Imagen de fondo sin transparencia */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -91,25 +91,25 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-black/6" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
-        <div className="relative bg-white/30 backdrop-blur-md border border-white/40 rounded-3xl p-12 shadow-2xl">
+        <div className="relative bg-white/30 backdrop-blur-md border border-white/40 rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-2xl">
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15 rounded-3xl"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-15 rounded-2xl md:rounded-3xl"
             style={{
               backgroundImage: `url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000')`,
             }}
           />
           
-          <div className="absolute inset-0 bg-white/40 rounded-3xl"></div>
+          <div className="absolute inset-0 bg-white/40 rounded-2xl md:rounded-3xl"></div>
           
           <div className="relative z-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-dark-gray mb-6 leading-tight">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-dark-gray mb-4 md:mb-6 leading-tight">
               Terapia Individual
               <span className="block text-red-accent">Pamplona</span>
             </h1>
-            <h2 className="text-2xl md:text-3xl font-semibold text-dark-gray mb-4">
+            <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-dark-gray mb-3 md:mb-4">
               Terapia Gestalt con Nicolau Gómez
             </h2>
-            <p className="text-xl md:text-2xl text-medium-gray mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-xl lg:text-2xl text-medium-gray mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
               Descubre tu potencial interior y encuentra el equilibrio emocional que buscas. 
               Un espacio seguro para tu crecimiento personal y bienestar.
             </p>
@@ -119,7 +119,7 @@ const Hero = () => {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="border-golden text-golden hover:bg-light-beige px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="border-golden text-golden hover:bg-light-beige px-6 md:px-8 py-5 md:py-4 text-base md:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full md:w-auto max-w-xs md:max-w-none"
                   >
                     <Calendar className="mr-2 h-5 w-5" />
                     Reservar Cita
