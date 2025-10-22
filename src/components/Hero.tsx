@@ -77,10 +77,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[70vh] md:min-h-screen flex items-center justify-center px-4 md:px-6 py-12 md:py-20 pt-24 md:pt-32">
+    <section className="relative min-h-[50vh] md:min-h-screen flex items-center justify-center px-4 md:px-6 py-8 md:py-20 pt-20 md:pt-32">
       {/* Imagen de fondo sin transparencia */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-150 md:scale-100"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?q=80&w=2000')`,
           filter: 'saturate(0.85) brightness(1.05) blur(1.5px)',
@@ -88,7 +88,7 @@ const Hero = () => {
       />
       
       {/* Overlay sutil */}
-      <div className="absolute inset-0 bg-gradient-to-br from-white/8 via-transparent to-black/6" />
+      <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-white/10 to-black/10 md:from-white/8 md:via-transparent md:to-black/6" />
       
       <div className="relative z-10 max-w-4xl mx-auto text-center">
         <div className="relative bg-white/30 backdrop-blur-md border border-white/40 rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-2xl">
